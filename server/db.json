@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "name": "Mostafa Mamdouh Mostafa",
+      "email": "mmabdallah801@gmail.com",
+      "password": "Asd123@@",
+      "confirmPassword": "Asd123@@",
+      "remembered": false,
+      "id": 1
+    },
+    {
+      "name": "Keemo",
+      "email": "mmabdallah801@gmail.com",
+      "password": "Asd123@@",
+      "confirmPassword": "Asd123@@",
+      "remembered": false,
+      "role": "student",
+      "id": 2
+    },
+    {
+      "name": "Keemo",
+      "email": "mmabdallah801@gmail.com",
+      "password": "Asd123@@",
+      "confirmPassword": "Asd123@@",
+      "remembered": true,
+      "role": "student",
+      "id": 3
+    }
+  ],
+   "exams": [
+    {
+      "id": 1,
+      "title": "Frontend Basics",
+      "description": "Test about HTML, CSS, JS",
+      "duration": 30,
+      "createdBy": "admin@example.com",
+      "questions": [
+        {
+          "id": 101,
+          "questionText": "What is HTML?",
+          "options": ["Language", "Database", "Protocol", "Browser"],
+          "correctAnswer": "Language"
+        }
+      ]
+    }
+  ]
+
+}
