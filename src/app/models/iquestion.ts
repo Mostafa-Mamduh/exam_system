@@ -3,5 +3,5 @@ export interface Iquestion {
   examId:number;
   correctAnswer: string;
   options:string[];
-  questionTxt: string;
+  questionText: string;
 }

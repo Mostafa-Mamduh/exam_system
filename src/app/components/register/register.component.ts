@@ -10,6 +10,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { environment } from '../../../environments/environment.development';
 
 @Component({
   selector: 'app-register',
@@ -44,7 +45,7 @@ export class RegisterComponent {
   onSubmit() {
     console.log(this.userData.value);
     let user = {...this.userData.value , role : "student"}
-    this._httpClient.post('http://localhost:3000/users' , user).subscribe(res => {
+    this._httpClient.post(environment.appUrl, user).subscribe(res => {
       console.log(res);
     })
   }

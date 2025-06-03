@@ -2,7 +2,7 @@ import { Iquestion } from "./iquestion";
 
 export interface Iexam {
   id?:number ;
-  name: string;
+  title: string;
   duration: number ;
   description: string;
   questions: Iquestion[];
