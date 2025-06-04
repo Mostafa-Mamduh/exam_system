@@ -2,10 +2,11 @@ import { ActivatedRoute } from '@angular/router';
 import { ExamsService } from './../../../services/exams.service';
 import { Component, OnInit } from '@angular/core';
 import { Iexam } from '../../../models/iexam';
+import { TimerComponent } from '../../timer/timer.component';
 
 @Component({
   selector: 'app-exam-details',
-  imports: [],
+  imports: [TimerComponent],
   templateUrl: './exam-details.component.html',
   styleUrl: './exam-details.component.css'
 })
@@ -19,7 +20,6 @@ export class ExamDetailsComponent implements OnInit{
       next : (res)=> {
         this.currentExam = res;
         console.log(this.currentExam)
-
       }
     })
   }

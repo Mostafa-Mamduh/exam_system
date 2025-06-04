@@ -2,11 +2,10 @@
 <div class="exam-page">
   <div class="exam-container">
     <div class="exam-box">
-      <div class="exam-header">
-        <h1>
-          {{ currentExam?.title }}
-        </h1>
-      </div>
+      <div class="exam-header d-flex justify-content-between align-items-center">
+  <h1>{{ currentExam?.title }}</h1>
+  <app-timer></app-timer>
+</div>
       <div class="exam-body">
         <p>
           These are
@@ -14,17 +13,6 @@
           this exam.
         </p>
       </div>
-      <!-- <div class="questions-wrapper">
-      <div class="question-card" *ngFor="let question of currentExam?.questions; index as i">
-        <h5>Question {{ i + 1 }}</h5>
-        <p>{{ question.questionText }}</p>
-        <ul class="options">
-          <li *ngFor="let option of question.options">
-            <input type="radio" [name]="'question' + i" /> {{ option }}
-          </li>
-        </ul>
-      </div>
-      </div> -->
       <div class="questions-wrapper">
       @for (question of currentExam?.questions; track question.id; let i = $index ) {
         <div class="question-card">
@@ -40,6 +28,7 @@
         </div>
       }
       </div>
+      <!-- <app-timer></app-timer> -->
     </div>
   </div>
 </div>
