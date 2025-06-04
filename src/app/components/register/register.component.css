@@ -1,11 +1,9 @@
-/* تنسيق الخلفية الرئيسية */
 .login-wrapper {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
     padding: 20px 0;
   }
   
-  /* تنسيق البطاقة */
   .card {
     border-radius: 15px !important;
     overflow: hidden;
@@ -25,7 +23,6 @@
     padding: 2.5rem !important;
   }
   
-  /* تنسيق العنوان */
   h3 {
     font-size: 2rem;
     margin-bottom: 2rem !important;
@@ -46,7 +43,6 @@
     border-radius: 2px;
   }
   
-  /* تنسيق حقول الإدخال */
   .form-control, .form-select {
     border: 2px solid #e0e0e0;
     border-radius: 10px !important;
@@ -60,7 +56,6 @@
     box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
   }
   
-  /* تنسيق الزر */
   .btn-primary {
     background-color: #3498db;
     border: none;
@@ -85,7 +80,6 @@
     color: #e74c3c !important;
   }
   
-  /* تنسيق خانات الاختيار */
   .form-check-input {
     width: 1.2em;
     height: 1.2em;
@@ -102,7 +96,6 @@
     color: #555;
   }
   
-  /* تنسيق الروابط */
   a.text-primary {
     color: #3498db !important;
     transition: all 0.3s;
@@ -114,7 +107,6 @@
     text-decoration: underline !important;
   }
   
-  /* تأثيرات الحركة */
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -131,7 +123,6 @@
   .card-body > *:nth-child(5) { animation-delay: 0.5s; }
   .card-body > *:nth-child(6) { animation-delay: 0.6s; }
   
-  /* تحسينات التباعد */
   .form-group {
     position: relative;
     margin-bottom: 1.5rem;
