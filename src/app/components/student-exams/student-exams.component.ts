@@ -1,10 +1,11 @@
 import { RouterLink } from '@angular/router';
 import { ExamsService } from './../../services/exams.service';
 import { Component, OnInit } from '@angular/core';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-student-exams',
-  imports: [RouterLink],
+  imports: [RouterLink,NavbarComponent],
   templateUrl: './student-exams.component.html',
   styleUrl: './student-exams.component.css'
 })

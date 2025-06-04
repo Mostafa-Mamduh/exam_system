@@ -2,10 +2,12 @@
 <div class="exam-page">
   <div class="exam-container">
     <div class="exam-box">
-      <div class="exam-header d-flex justify-content-between align-items-center">
-  <h1>{{ currentExam?.title }}</h1>
-  <app-timer></app-timer>
-</div>
+      <div
+        class="exam-header d-flex justify-content-between align-items-center"
+      >
+        <h1>{{ currentExam?.title }}</h1>
+        <app-timer></app-timer>
+      </div>
       <div class="exam-body">
         <p>
           These are
@@ -14,20 +16,33 @@
         </p>
       </div>
       <div class="questions-wrapper">
-      @for (question of currentExam?.questions; track question.id; let i = $index ) {
+        @for (question of currentExam?.questions; track question.id; let i =
+        $index ) {
         <div class="question-card">
           <h5>Question {{ i + 1 }}</h5>
           <p>{{ question.questionText }}</p>
           <ul class="options">
             @for(option of question.options; track option){
-              <li>
-                <input type="radio" [name]="'question' + i" /> {{ option }}
-              </li>
+            <li>
+              <input
+                type="radio"
+                [name]="'question' + i"
+                [value]="option"
+                (change)="userAnswers[i] = option"
+              />
+              {{ option }}
+            </li>
             }
           </ul>
         </div>
-      }
+        }
       </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <button class="btn btn-success mt-4" (click)="calcResult()">
+        Submit Exam
+      </button>
+      </div>
+
       <!-- <app-timer></app-timer> -->
     </div>
   </div>
