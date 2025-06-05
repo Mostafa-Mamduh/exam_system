@@ -1882,6 +1882,27 @@
       "submittedAt": "2025-06-05T11:49:05.829Z",
       "studentId": 1,
       "id": 4
+    },
+    {
+      "examId": 6,
+      "score": 5,
+      "submittedAt": "2025-06-05T11:51:43.195Z",
+      "studentId": 1,
+      "id": 5
+    },
+    {
+      "examId": 2,
+      "score": 14,
+      "submittedAt": "2025-06-05T12:04:31.886Z",
+      "studentId": 1,
+      "id": 6
+    },
+    {
+      "examId": 7,
+      "score": 2,
+      "submittedAt": "2025-06-05T12:05:41.323Z",
+      "studentId": 1,
+      "id": 7
     }
   ]
 }
