@@ -52,6 +52,7 @@ export class LoginComponent {
           console.log(foundUser);
         } else {
           alert('Invalid email or password');
+          this._Router.navigateByUrl(`/register`)
         }
       },
     });

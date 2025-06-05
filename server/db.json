@@ -27,8 +27,7 @@
       "id": 3
     }
   ],
-
- "exams": [
+  "exams": [
     {
       "id": 1,
       "title": "Frontend Basics",
@@ -39,121 +38,221 @@
         {
           "id": 1,
           "questionText": "What does HTML stand for?",
-          "options": ["Hyper Text Markup Language", "High Text Markup Language", "Hyper Tabular Markup Language", "None of these"],
+          "options": [
+            "Hyper Text Markup Language",
+            "High Text Markup Language",
+            "Hyper Tabular Markup Language",
+            "None of these"
+          ],
           "correctAnswer": "Hyper Text Markup Language"
         },
         {
           "id": 2,
           "questionText": "Which HTML tag is used to define an unordered list?",
-          "options": ["<ol>", "<ul>", "<li>", "<list>"],
+          "options": [
+            "<ol>",
+            "<ul>",
+            "<li>",
+            "<list>"
+          ],
           "correctAnswer": "<ul>"
         },
         {
           "id": 3,
           "questionText": "What is the correct CSS syntax to change the text color of a paragraph?",
-          "options": ["p {color: blue;}", "p {text-color: blue;}", "p {font-color: blue;}", "p.color = blue;"],
+          "options": [
+            "p {color: blue;}",
+            "p {text-color: blue;}",
+            "p {font-color: blue;}",
+            "p.color = blue;"
+          ],
           "correctAnswer": "p {color: blue;}"
         },
         {
           "id": 4,
           "questionText": "Which JavaScript method is used to add an element to the end of an array?",
-          "options": ["push()", "pop()", "shift()", "unshift()"],
+          "options": [
+            "push()",
+            "pop()",
+            "shift()",
+            "unshift()"
+          ],
           "correctAnswer": "push()"
         },
         {
           "id": 5,
           "questionText": "What is the purpose of the <div> tag in HTML?",
-          "options": ["Define a division or section", "Create a hyperlink", "Insert an image", "Style text"],
+          "options": [
+            "Define a division or section",
+            "Create a hyperlink",
+            "Insert an image",
+            "Style text"
+          ],
           "correctAnswer": "Define a division or section"
         },
         {
           "id": 6,
           "questionText": "Which CSS property controls the size of text?",
-          "options": ["font-size", "text-size", "size", "font-style"],
+          "options": [
+            "font-size",
+            "text-size",
+            "size",
+            "font-style"
+          ],
           "correctAnswer": "font-size"
         },
         {
           "id": 7,
           "questionText": "What is the output of console.log(typeof null) in JavaScript?",
-          "options": ["object", "null", "undefined", "string"],
+          "options": [
+            "object",
+            "null",
+            "undefined",
+            "string"
+          ],
           "correctAnswer": "object"
         },
         {
           "id": 8,
           "questionText": "Which HTML attribute specifies an alternate text for an image?",
-          "options": ["alt", "title", "src", "href"],
+          "options": [
+            "alt",
+            "title",
+            "src",
+            "href"
+          ],
           "correctAnswer": "alt"
         },
         {
           "id": 9,
           "questionText": "How do you select an element with id 'myId' in CSS?",
-          "options": ["#myId", ".myId", "myId", "*myId"],
+          "options": [
+            "#myId",
+            ".myId",
+            "myId",
+            "*myId"
+          ],
           "correctAnswer": "#myId"
         },
         {
           "id": 10,
           "questionText": "Which JavaScript keyword declares a variable with block scope?",
-          "options": ["let", "var", "const", "function"],
+          "options": [
+            "let",
+            "var",
+            "const",
+            "function"
+          ],
           "correctAnswer": "let"
         },
         {
           "id": 11,
           "questionText": "What is the correct HTML tag for a line break?",
-          "options": ["<br>", "<break>", "<lb>", "<newline>"],
+          "options": [
+            "<br>",
+            "<break>",
+            "<lb>",
+            "<newline>"
+          ],
           "correctAnswer": "<br>"
         },
         {
           "id": 12,
           "questionText": "Which CSS property is used to add spacing between elements?",
-          "options": ["margin", "padding", "border", "spacing"],
+          "options": [
+            "margin",
+            "padding",
+            "border",
+            "spacing"
+          ],
           "correctAnswer": "margin"
         },
         {
           "id": 13,
           "questionText": "What does the JavaScript '===' operator do?",
-          "options": ["Strict equality comparison", "Loose equality comparison", "Assignment", "Logical AND"],
+          "options": [
+            "Strict equality comparison",
+            "Loose equality comparison",
+            "Assignment",
+            "Logical AND"
+          ],
           "correctAnswer": "Strict equality comparison"
         },
         {
           "id": 14,
           "questionText": "Which HTML tag is used for a table row?",
-          "options": ["<tr>", "<td>", "<th>", "<table>"],
+          "options": [
+            "<tr>",
+            "<td>",
+            "<th>",
+            "<table>"
+          ],
           "correctAnswer": "<tr>"
         },
         {
           "id": 15,
           "questionText": "What is the default display value for a <div> element in CSS?",
-          "options": ["block", "inline", "flex", "grid"],
+          "options": [
+            "block",
+            "inline",
+            "flex",
+            "grid"
+          ],
           "correctAnswer": "block"
         },
         {
           "id": 16,
           "questionText": "How do you write a comment in JavaScript?",
-          "options": ["// This is a comment", "<!-- This is a comment -->", "# This is a comment", "/* This is a comment */"],
+          "options": [
+            "// This is a comment",
+            "<!-- This is a comment -->",
+            "# This is a comment",
+            "/* This is a comment */"
+          ],
           "correctAnswer": "// This is a comment"
         },
         {
           "id": 17,
           "questionText": "Which HTML tag is used to create a hyperlink?",
-          "options": ["<a>", "<link>", "<href>", "<url>"],
+          "options": [
+            "<a>",
+            "<link>",
+            "<href>",
+            "<url>"
+          ],
           "correctAnswer": "<a>"
         },
         {
           "id": 18,
           "questionText": "Which CSS property aligns text horizontally?",
-          "options": ["text-align", "align-content", "vertical-align", "text-justify"],
+          "options": [
+            "text-align",
+            "align-content",
+            "vertical-align",
+            "text-justify"
+          ],
           "correctAnswer": "text-align"
         },
         {
           "id": 19,
           "questionText": "What is the JavaScript method to convert a string to uppercase?",
-          "options": ["toUpperCase()", "toLowerCase()", "upperCase()", "capitalize()"],
+          "options": [
+            "toUpperCase()",
+            "toLowerCase()",
+            "upperCase()",
+            "capitalize()"
+          ],
           "correctAnswer": "toUpperCase()"
         },
         {
           "id": 20,
           "questionText": "Which HTML attribute specifies the source of an image?",
-          "options": ["src", "href", "alt", "link"],
+          "options": [
+            "src",
+            "href",
+            "alt",
+            "link"
+          ],
           "correctAnswer": "src"
         }
       ]
@@ -168,121 +267,221 @@
         {
           "id": 1,
           "questionText": "What is the correct way to declare a variable in JavaScript?",
-          "options": ["let x = 5;", "variable x = 5;", "x = 5;", "const x = 5;"],
+          "options": [
+            "let x = 5;",
+            "variable x = 5;",
+            "x = 5;",
+            "const x = 5;"
+          ],
           "correctAnswer": "let x = 5;"
         },
         {
           "id": 2,
           "questionText": "Which method removes the last element from an array?",
-          "options": ["pop()", "push()", "shift()", "unshift()"],
+          "options": [
+            "pop()",
+            "push()",
+            "shift()",
+            "unshift()"
+          ],
           "correctAnswer": "pop()"
         },
         {
           "id": 3,
           "questionText": "What is the output of console.log(2 + '2')?",
-          "options": ["'22'", "4", "22", "NaN"],
+          "options": [
+            "'22'",
+            "4",
+            "22",
+            "NaN"
+          ],
           "correctAnswer": "'22'"
         },
         {
           "id": 4,
           "questionText": "Which keyword is used to define a constant in JavaScript?",
-          "options": ["const", "let", "var", "static"],
+          "options": [
+            "const",
+            "let",
+            "var",
+            "static"
+          ],
           "correctAnswer": "const"
         },
         {
           "id": 5,
           "questionText": "What does the 'typeof' operator return for an array?",
-          "options": ["object", "array", "list", "undefined"],
+          "options": [
+            "object",
+            "array",
+            "list",
+            "undefined"
+          ],
           "correctAnswer": "object"
         },
         {
           "id": 6,
           "questionText": "How do you access the first element of an array called 'arr'?",
-          "options": ["arr[0]", "arr[1]", "arr.first()", "arr.get(0)"],
+          "options": [
+            "arr[0]",
+            "arr[1]",
+            "arr.first()",
+            "arr.get(0)"
+          ],
           "correctAnswer": "arr[0]"
         },
         {
           "id": 7,
           "questionText": "Which loop is used to iterate over an object's properties?",
-          "options": ["for...in", "for...of", "while", "do...while"],
+          "options": [
+            "for...in",
+            "for...of",
+            "while",
+            "do...while"
+          ],
           "correctAnswer": "for...in"
         },
         {
           "id": 8,
           "questionText": "What is the purpose of the 'return' statement in a function?",
-          "options": ["Exit the function and return a value", "Continue to the next iteration", "Define a variable", "Log to console"],
+          "options": [
+            "Exit the function and return a value",
+            "Continue to the next iteration",
+            "Define a variable",
+            "Log to console"
+          ],
           "correctAnswer": "Exit the function and return a value"
         },
         {
           "id": 9,
           "questionText": "What is the output of console.log(!!'hello')?",
-          "options": ["true", "false", "'hello'", "undefined"],
+          "options": [
+            "true",
+            "false",
+            "'hello'",
+            "undefined"
+          ],
           "correctAnswer": "true"
         },
         {
           "id": 10,
           "questionText": "Which method adds an element to the beginning of an array?",
-          "options": ["unshift()", "push()", "shift()", "splice()"],
+          "options": [
+            "unshift()",
+            "push()",
+            "shift()",
+            "splice()"
+          ],
           "correctAnswer": "unshift()"
         },
         {
           "id": 11,
           "questionText": "What is a closure in JavaScript?",
-          "options": ["A function with access to its outer scope", "A loop structure", "A type of array", "A DOM method"],
+          "options": [
+            "A function with access to its outer scope",
+            "A loop structure",
+            "A type of array",
+            "A DOM method"
+          ],
           "correctAnswer": "A function with access to its outer scope"
         },
         {
           "id": 12,
           "questionText": "What does the 'this' keyword refer to in a function?",
-          "options": ["The object that owns the function", "The global object", "The function itself", "The parent function"],
+          "options": [
+            "The object that owns the function",
+            "The global object",
+            "The function itself",
+            "The parent function"
+          ],
           "correctAnswer": "The object that owns the function"
         },
         {
           "id": 13,
           "questionText": "Which operator checks for equality without type coercion?",
-          "options": ["===", "==", "=", "!="],
+          "options": [
+            "===",
+            "==",
+            "=",
+            "!="
+          ],
           "correctAnswer": "==="
         },
         {
           "id": 14,
           "questionText": "How do you declare an arrow function in JavaScript?",
-          "options": ["() => {}", "function() {}", "=> {}", "func() {}"],
+          "options": [
+            "() => {}",
+            "function() {}",
+            "=> {}",
+            "func() {}"
+          ],
           "correctAnswer": "() => {}"
         },
         {
           "id": 15,
           "questionText": "What is the output of console.log([1, 2, 3].length)?",
-          "options": ["3", "2", "4", "undefined"],
+          "options": [
+            "3",
+            "2",
+            "4",
+            "undefined"
+          ],
           "correctAnswer": "3"
         },
         {
           "id": 16,
           "questionText": "Which method is used to join array elements into a string?",
-          "options": ["join()", "concat()", "split()", "slice()"],
+          "options": [
+            "join()",
+            "concat()",
+            "split()",
+            "slice()"
+          ],
           "correctAnswer": "join()"
         },
         {
           "id": 17,
           "questionText": "What is the purpose of 'event.preventDefault()'?",
-          "options": ["Prevent the default behavior of an event", "Stop event propagation", "Trigger an event", "Log the event"],
+          "options": [
+            "Prevent the default behavior of an event",
+            "Stop event propagation",
+            "Trigger an event",
+            "Log the event"
+          ],
           "correctAnswer": "Prevent the default behavior of an event"
         },
         {
           "id": 18,
           "questionText": "Which method checks if an array includes a specific value?",
-          "options": ["includes()", "contains()", "has()", "indexOf()"],
+          "options": [
+            "includes()",
+            "contains()",
+            "has()",
+            "indexOf()"
+          ],
           "correctAnswer": "includes()"
         },
         {
           "id": 19,
           "questionText": "What is the output of console.log(0 == '0')?",
-          "options": ["true", "false", "undefined", "NaN"],
+          "options": [
+            "true",
+            "false",
+            "undefined",
+            "NaN"
+          ],
           "correctAnswer": "true"
         },
         {
           "id": 20,
           "questionText": "Which JavaScript method is used to schedule a function to run after a delay?",
-          "options": ["setTimeout()", "setInterval()", "delay()", "wait()"],
+          "options": [
+            "setTimeout()",
+            "setInterval()",
+            "delay()",
+            "wait()"
+          ],
           "correctAnswer": "setTimeout()"
         }
       ]
@@ -297,121 +496,221 @@
         {
           "id": 1,
           "questionText": "What is TypeScript primarily used for?",
-          "options": ["Adding static types to JavaScript", "Styling web pages", "Server-side scripting", "Database management"],
+          "options": [
+            "Adding static types to JavaScript",
+            "Styling web pages",
+            "Server-side scripting",
+            "Database management"
+          ],
           "correctAnswer": "Adding static types to JavaScript"
         },
         {
           "id": 2,
           "questionText": "How do you define a variable with a specific type in TypeScript?",
-          "options": ["let x: number;", "let x = number;", "var x: number;", "x: number;"],
+          "options": [
+            "let x: number;",
+            "let x = number;",
+            "var x: number;",
+            "x: number;"
+          ],
           "correctAnswer": "let x: number;"
         },
         {
           "id": 3,
           "questionText": "What is the purpose of an interface in TypeScript?",
-          "options": ["Define the shape of an object", "Create a class", "Run a function", "Style elements"],
+          "options": [
+            "Define the shape of an object",
+            "Create a class",
+            "Run a function",
+            "Style elements"
+          ],
           "correctAnswer": "Define the shape of an object"
         },
         {
           "id": 4,
           "questionText": "Which keyword is used to define a constant in TypeScript?",
-          "options": ["const", "let", "var", "static"],
+          "options": [
+            "const",
+            "let",
+            "var",
+            "static"
+          ],
           "correctAnswer": "const"
         },
         {
           "id": 5,
           "questionText": "How do you specify an optional property in a TypeScript interface?",
-          "options": ["property?: type", "property: type?", "property!: type", "property: type"],
+          "options": [
+            "property?: type",
+            "property: type?",
+            "property!: type",
+            "property: type"
+          ],
           "correctAnswer": "property?: type"
         },
         {
           "id": 6,
           "questionText": "What is the type of 'null' in TypeScript?",
-          "options": ["null", "undefined", "object", "void"],
+          "options": [
+            "null",
+            "undefined",
+            "object",
+            "void"
+          ],
           "correctAnswer": "null"
         },
         {
           "id": 7,
           "questionText": "How do you define a function type in TypeScript?",
-          "options": ["(param: type) => returnType", "function(param: type): returnType", "param: type => returnType", "func(param: type): returnType"],
+          "options": [
+            "(param: type) => returnType",
+            "function(param: type): returnType",
+            "param: type => returnType",
+            "func(param: type): returnType"
+          ],
           "correctAnswer": "(param: type) => returnType"
         },
         {
           "id": 8,
           "questionText": "What does the 'any' type allow in TypeScript?",
-          "options": ["Any value without type checking", "Only numbers", "Only strings", "Strict type checking"],
+          "options": [
+            "Any value without type checking",
+            "Only numbers",
+            "Only strings",
+            "Strict type checking"
+          ],
           "correctAnswer": "Any value without type checking"
         },
         {
           "id": 9,
           "questionText": "How do you extend an interface in TypeScript?",
-          "options": ["extends", "implements", "inherits", "uses"],
+          "options": [
+            "extends",
+            "implements",
+            "inherits",
+            "uses"
+          ],
           "correctAnswer": "extends"
         },
         {
           "id": 10,
           "questionText": "What is the purpose of the 'never' type in TypeScript?",
-          "options": ["Represents values that never occur", "Represents any value", "Represents null values", "Represents undefined values"],
+          "options": [
+            "Represents values that never occur",
+            "Represents any value",
+            "Represents null values",
+            "Represents undefined values"
+          ],
           "correctAnswer": "Represents values that never occur"
         },
         {
           "id": 11,
           "questionText": "How do you define a union type in TypeScript?",
-          "options": ["type1 | type2", "type1 & type2", "type1 + type2", "type1, type2"],
+          "options": [
+            "type1 | type2",
+            "type1 & type2",
+            "type1 + type2",
+            "type1, type2"
+          ],
           "correctAnswer": "type1 | type2"
         },
         {
           "id": 12,
           "questionText": "What is the purpose of the 'as' keyword in TypeScript?",
-          "options": ["Type assertion", "Variable declaration", "Function definition", "Loop control"],
+          "options": [
+            "Type assertion",
+            "Variable declaration",
+            "Function definition",
+            "Loop control"
+          ],
           "correctAnswer": "Type assertion"
         },
         {
           "id": 13,
           "questionText": "How do you make a property readonly in an interface?",
-          "options": ["readonly property: type", "const property: type", "static property: type", "final property: type"],
+          "options": [
+            "readonly property: type",
+            "const property: type",
+            "static property: type",
+            "final property: type"
+          ],
           "correctAnswer": "readonly property: type"
         },
         {
           "id": 14,
           "questionText": "What does the 'unknown' type represent in TypeScript?",
-          "options": ["A type-safe alternative to 'any'", "A null value", "An undefined value", "A specific type"],
+          "options": [
+            "A type-safe alternative to 'any'",
+            "A null value",
+            "An undefined value",
+            "A specific type"
+          ],
           "correctAnswer": "A type-safe alternative to 'any'"
         },
         {
           "id": 15,
           "questionText": "How do you define a tuple in TypeScript?",
-          "options": ["[type1, type2]", "{type1, type2}", "(type1, type2)", "type1 | type2"],
+          "options": [
+            "[type1, type2]",
+            "{type1, type2}",
+            "(type1, type2)",
+            "type1 | type2"
+          ],
           "correctAnswer": "[type1, type2]"
         },
         {
           "id": 16,
           "questionText": "What is the output of a TypeScript enum without explicit values?",
-          "options": ["Numeric values starting from 0", "String values", "Boolean values", "Undefined values"],
+          "options": [
+            "Numeric values starting from 0",
+            "String values",
+            "Boolean values",
+            "Undefined values"
+          ],
           "correctAnswer": "Numeric values starting from 0"
         },
         {
           "id": 17,
           "questionText": "How do you implement an interface in a TypeScript class?",
-          "options": ["implements", "extends", "uses", "inherits"],
+          "options": [
+            "implements",
+            "extends",
+            "uses",
+            "inherits"
+          ],
           "correctAnswer": "implements"
         },
         {
           "id": 18,
           "questionText": "What is the purpose of the 'type' keyword in TypeScript?",
-          "options": ["Define type aliases", "Create a class", "Define a function", "Style elements"],
+          "options": [
+            "Define type aliases",
+            "Create a class",
+            "Define a function",
+            "Style elements"
+          ],
           "correctAnswer": "Define type aliases"
         },
         {
           "id": 19,
           "questionText": "How do you handle null checks in TypeScript?",
-          "options": ["Using optional chaining (?.)", "Using null keyword", "Using undefined keyword", "Using try-catch"],
+          "options": [
+            "Using optional chaining (?.)",
+            "Using null keyword",
+            "Using undefined keyword",
+            "Using try-catch"
+          ],
           "correctAnswer": "Using optional chaining (?.)"
         },
         {
           "id": 20,
           "questionText": "What is the benefit of using TypeScript over JavaScript?",
-          "options": ["Static type checking", "Dynamic type checking", "No type checking", "Better performance"],
+          "options": [
+            "Static type checking",
+            "Dynamic type checking",
+            "No type checking",
+            "Better performance"
+          ],
           "correctAnswer": "Static type checking"
         }
       ]
@@ -426,121 +725,221 @@
         {
           "id": 1,
           "questionText": "What is the purpose of a component in Angular?",
-          "options": ["Encapsulate UI and logic", "Manage routing", "Handle HTTP requests", "Store data"],
+          "options": [
+            "Encapsulate UI and logic",
+            "Manage routing",
+            "Handle HTTP requests",
+            "Store data"
+          ],
           "correctAnswer": "Encapsulate UI and logic"
         },
         {
           "id": 2,
           "questionText": "Which decorator is used to define an Angular component?",
-          "options": ["@Component", "@NgModule", "@Injectable", "@Directive"],
+          "options": [
+            "@Component",
+            "@NgModule",
+            "@Injectable",
+            "@Directive"
+          ],
           "correctAnswer": "@Component"
         },
         {
           "id": 3,
           "questionText": "What is the role of NgModule in Angular?",
-          "options": ["Organize and bootstrap the application", "Define a component", "Handle routing", "Manage services"],
+          "options": [
+            "Organize and bootstrap the application",
+            "Define a component",
+            "Handle routing",
+            "Manage services"
+          ],
           "correctAnswer": "Organize and bootstrap the application"
         },
         {
           "id": 4,
           "questionText": "How do you bind data to a template in Angular?",
-          "options": ["{{ variable }}", "[variable]", "(variable)", "*variable"],
+          "options": [
+            "{{ variable }}",
+            "[variable]",
+            "(variable)",
+            "*variable"
+          ],
           "correctAnswer": "{{ variable }}"
         },
         {
           "id": 5,
           "questionText": "What is the purpose of the *ngIf directive?",
-          "options": ["Conditionally display an element", "Loop over a list", "Bind data", "Handle events"],
+          "options": [
+            "Conditionally display an element",
+            "Loop over a list",
+            "Bind data",
+            "Handle events"
+          ],
           "correctAnswer": "Conditionally display an element"
         },
         {
           "id": 6,
           "questionText": "Which service is used to make HTTP requests in Angular?",
-          "options": ["HttpClient", "HttpService", "FetchService", "ApiService"],
+          "options": [
+            "HttpClient",
+            "HttpService",
+            "FetchService",
+            "ApiService"
+          ],
           "correctAnswer": "HttpClient"
         },
         {
           "id": 7,
           "questionText": "What is the purpose of dependency injection in Angular?",
-          "options": ["Provide services to components", "Manage routing", "Style components", "Handle events"],
+          "options": [
+            "Provide services to components",
+            "Manage routing",
+            "Style components",
+            "Handle events"
+          ],
           "correctAnswer": "Provide services to components"
         },
         {
           "id": 8,
           "questionText": "How do you define a route in Angular?",
-          "options": ["RouterModule.forRoot(routes)", "Route.define(routes)", "Router.add(routes)", "NgModule.routes(routes)"],
+          "options": [
+            "RouterModule.forRoot(routes)",
+            "Route.define(routes)",
+            "Router.add(routes)",
+            "NgModule.routes(routes)"
+          ],
           "correctAnswer": "RouterModule.forRoot(routes)"
         },
         {
           "id": 9,
           "questionText": "What is the purpose of the *ngFor directive?",
-          "options": ["Loop over a list", "Conditionally display", "Bind events", "Style elements"],
+          "options": [
+            "Loop over a list",
+            "Conditionally display",
+            "Bind events",
+            "Style elements"
+          ],
           "correctAnswer": "Loop over a list"
         },
         {
           "id": 10,
           "questionText": "How do you access route parameters in Angular?",
-          "options": ["ActivatedRoute", "Router", "RouteService", "ParamService"],
+          "options": [
+            "ActivatedRoute",
+            "Router",
+            "RouteService",
+            "ParamService"
+          ],
           "correctAnswer": "ActivatedRoute"
         },
         {
           "id": 11,
           "questionText": "What is the purpose of the @Injectable decorator?",
-          "options": ["Mark a class as a service", "Define a component", "Create a directive", "Handle routing"],
+          "options": [
+            "Mark a class as a service",
+            "Define a component",
+            "Create a directive",
+            "Handle routing"
+          ],
           "correctAnswer": "Mark a class as a service"
         },
         {
           "id": 12,
           "questionText": "What is two-way data binding in Angular?",
-          "options": ["Binding data and events", "Binding only data", "Binding only events", "Binding styles"],
+          "options": [
+            "Binding data and events",
+            "Binding only data",
+            "Binding only events",
+            "Binding styles"
+          ],
           "correctAnswer": "Binding data and events"
         },
         {
           "id": 13,
           "questionText": "Which directive is used for two-way data binding?",
-          "options": ["[(ngModel)]", "[ngModel]", "(ngModel)", "*ngModel"],
+          "options": [
+            "[(ngModel)]",
+            "[ngModel]",
+            "(ngModel)",
+            "*ngModel"
+          ],
           "correctAnswer": "[(ngModel)]"
         },
         {
           "id": 14,
           "questionText": "What is the purpose of Angular pipes?",
-          "options": ["Transform data in templates", "Handle HTTP requests", "Define routes", "Manage services"],
+          "options": [
+            "Transform data in templates",
+            "Handle HTTP requests",
+            "Define routes",
+            "Manage services"
+          ],
           "correctAnswer": "Transform data in templates"
         },
         {
           "id": 15,
           "questionText": "How do you create a custom pipe in Angular?",
-          "options": ["@Pipe", "@Component", "@Directive", "@Injectable"],
+          "options": [
+            "@Pipe",
+            "@Component",
+            "@Directive",
+            "@Injectable"
+          ],
           "correctAnswer": "@Pipe"
         },
         {
           "id": 16,
           "questionText": "What is the purpose of the Router service in Angular?",
-          "options": ["Navigate between routes", "Make HTTP requests", "Manage services", "Bind data"],
+          "options": [
+            "Navigate between routes",
+            "Make HTTP requests",
+            "Manage services",
+            "Bind data"
+          ],
           "correctAnswer": "Navigate between routes"
         },
         {
           "id": 17,
           "questionText": "What is the lifecycle hook called after a component is initialized?",
-          "options": ["ngOnInit", "ngOnChanges", "ngAfterViewInit", "ngOnDestroy"],
+          "options": [
+            "ngOnInit",
+            "ngOnChanges",
+            "ngAfterViewInit",
+            "ngOnDestroy"
+          ],
           "correctAnswer": "ngOnInit"
         },
         {
           "id": 18,
           "questionText": "How do you pass data from a parent to a child component?",
-          "options": ["@Input", "@Output", "@ViewChild", "@Inject"],
+          "options": [
+            "@Input",
+            "@Output",
+            "@ViewChild",
+            "@Inject"
+          ],
           "correctAnswer": "@Input"
         },
         {
           "id": 19,
           "questionText": "What is the purpose of the async pipe in Angular?",
-          "options": ["Handle asynchronous data", "Loop over data", "Bind events", "Style elements"],
+          "options": [
+            "Handle asynchronous data",
+            "Loop over data",
+            "Bind events",
+            "Style elements"
+          ],
           "correctAnswer": "Handle asynchronous data"
         },
         {
           "id": 20,
           "questionText": "How do you lazy-load a module in Angular?",
-          "options": ["loadChildren", "importModule", "lazyModule", "asyncModule"],
+          "options": [
+            "loadChildren",
+            "importModule",
+            "lazyModule",
+            "asyncModule"
+          ],
           "correctAnswer": "loadChildren"
         }
       ]
@@ -555,121 +954,221 @@
         {
           "id": 1,
           "questionText": "What is React primarily used for?",
-          "options": ["Building user interfaces", "Server-side logic", "Database management", "Styling pages"],
+          "options": [
+            "Building user interfaces",
+            "Server-side logic",
+            "Database management",
+            "Styling pages"
+          ],
           "correctAnswer": "Building user interfaces"
         },
         {
           "id": 2,
           "questionText": "What is a component in React?",
-          "options": ["A reusable UI piece", "A styling rule", "A database query", "A routing module"],
+          "options": [
+            "A reusable UI piece",
+            "A styling rule",
+            "A database query",
+            "A routing module"
+          ],
           "correctAnswer": "A reusable UI piece"
         },
         {
           "id": 3,
           "questionText": "How do you create a functional component in React?",
-          "options": ["function MyComponent() {}", "class MyComponent {}", "const MyComponent = () => {}", "component MyComponent() {}"],
+          "options": [
+            "function MyComponent() {}",
+            "class MyComponent {}",
+            "const MyComponent = () => {}",
+            "component MyComponent() {}"
+          ],
           "correctAnswer": "const MyComponent = () => {}"
         },
         {
           "id": 4,
           "questionText": "What is JSX in React?",
-          "options": ["A syntax extension for JavaScript", "A styling language", "A database connector", "A routing library"],
+          "options": [
+            "A syntax extension for JavaScript",
+            "A styling language",
+            "A database connector",
+            "A routing library"
+          ],
           "correctAnswer": "A syntax extension for JavaScript"
         },
         {
           "id": 5,
           "questionText": "How do you pass data to a React component?",
-          "options": ["Props", "State", "Hooks", "Context"],
+          "options": [
+            "Props",
+            "State",
+            "Hooks",
+            "Context"
+          ],
           "correctAnswer": "Props"
         },
         {
           "id": 6,
           "questionText": "What is the purpose of useState hook?",
-          "options": ["Manage state in functional components", "Handle routing", "Fetch data", "Style components"],
+          "options": [
+            "Manage state in functional components",
+            "Handle routing",
+            "Fetch data",
+            "Style components"
+          ],
           "correctAnswer": "Manage state in functional components"
         },
         {
           "id": 7,
           "questionText": "How do you handle events in React?",
-          "options": ["onClick={function}", "addEventListener", "bindEvent", "attachEvent"],
+          "options": [
+            "onClick={function}",
+            "addEventListener",
+            "bindEvent",
+            "attachEvent"
+          ],
           "correctAnswer": "onClick={function}"
         },
         {
           "id": 8,
           "questionText": "What is the virtual DOM in React?",
-          "options": ["A lightweight copy of the DOM", "The actual browser DOM", "A database", "A styling engine"],
+          "options": [
+            "A lightweight copy of the DOM",
+            "The actual browser DOM",
+            "A database",
+            "A styling engine"
+          ],
           "correctAnswer": "A lightweight copy of the DOM"
         },
         {
           "id": 9,
           "questionText": "How do you update state in React?",
-          "options": ["setState", "updateState", "changeState", "modifyState"],
+          "options": [
+            "setState",
+            "updateState",
+            "changeState",
+            "modifyState"
+          ],
           "correctAnswer": "setState"
         },
         {
           "id": 10,
           "questionText": "What is the purpose of useEffect hook?",
-          "options": ["Handle side effects", "Manage state", "Render components", "Style elements"],
+          "options": [
+            "Handle side effects",
+            "Manage state",
+            "Render components",
+            "Style elements"
+          ],
           "correctAnswer": "Handle side effects"
         },
         {
           "id": 11,
           "questionText": "How do you conditionally render in React?",
-          "options": ["Using && or ternary operators", "Using if statements in JSX", "Using switch cases", "Using loops"],
+          "options": [
+            "Using && or ternary operators",
+            "Using if statements in JSX",
+            "Using switch cases",
+            "Using loops"
+          ],
           "correctAnswer": "Using && or ternary operators"
         },
         {
           "id": 12,
           "questionText": "What is the purpose of the key prop in React?",
-          "options": ["Uniquely identify elements in a list", "Style components", "Bind events", "Fetch data"],
+          "options": [
+            "Uniquely identify elements in a list",
+            "Style components",
+            "Bind events",
+            "Fetch data"
+          ],
           "correctAnswer": "Uniquely identify elements in a list"
         },
         {
           "id": 13,
           "questionText": "How do you create a class component in React?",
-          "options": ["class MyComponent extends React.Component {}", "function MyComponent() {}", "const MyComponent = () => {}", "component MyComponent {}"],
+          "options": [
+            "class MyComponent extends React.Component {}",
+            "function MyComponent() {}",
+            "const MyComponent = () => {}",
+            "component MyComponent {}"
+          ],
           "correctAnswer": "class MyComponent extends React.Component {}"
         },
         {
           "id": 14,
           "questionText": "What is the Context API used for in React?",
-          "options": ["Share data across components", "Manage routing", "Style components", "Handle events"],
+          "options": [
+            "Share data across components",
+            "Manage routing",
+            "Style components",
+            "Handle events"
+          ],
           "correctAnswer": "Share data across components"
         },
         {
           "id": 15,
           "questionText": "How do you import React in a file?",
-          "options": ["import React from 'react'", "import React from 'react-dom'", "require React from 'react'", "import React from 'jsx'"],
+          "options": [
+            "import React from 'react'",
+            "import React from 'react-dom'",
+            "require React from 'react'",
+            "import React from 'jsx'"
+          ],
           "correctAnswer": "import React from 'react'"
         },
         {
           "id": 16,
           "questionText": "What is the purpose of React Router?",
-          "options": ["Client-side routing", "Server-side routing", "Data fetching", "State management"],
+          "options": [
+            "Client-side routing",
+            "Server-side routing",
+            "Data fetching",
+            "State management"
+          ],
           "correctAnswer": "Client-side routing"
         },
         {
           "id": 17,
           "questionText": "How do you render a list in React?",
-          "options": ["Using map()", "Using forEach()", "Using loop()", "Using renderList()"],
+          "options": [
+            "Using map()",
+            "Using forEach()",
+            "Using loop()",
+            "Using renderList()"
+          ],
           "correctAnswer": "Using map()"
         },
         {
           "id": 18,
           "questionText": "What is the default export of a React component?",
-          "options": ["export default MyComponent", "export MyComponent", "module.exports = MyComponent", "export class MyComponent"],
+          "options": [
+            "export default MyComponent",
+            "export MyComponent",
+            "module.exports = MyComponent",
+            "export class MyComponent"
+          ],
           "correctAnswer": "export default MyComponent"
         },
         {
           "id": 19,
           "questionText": "What is the purpose of the useRef hook?",
-          "options": ["Reference DOM elements or values", "Manage state", "Handle side effects", "Fetch data"],
+          "options": [
+            "Reference DOM elements or values",
+            "Manage state",
+            "Handle side effects",
+            "Fetch data"
+          ],
           "correctAnswer": "Reference DOM elements or values"
         },
         {
           "id": 20,
           "questionText": "How do you prevent a component from re-rendering unnecessarily?",
-          "options": ["React.memo", "useState", "useEffect", "useCallback"],
+          "options": [
+            "React.memo",
+            "useState",
+            "useEffect",
+            "useCallback"
+          ],
           "correctAnswer": "React.memo"
         }
       ]
@@ -684,121 +1183,221 @@
         {
           "id": 1,
           "questionText": "What is Vue.js primarily used for?",
-          "options": ["Building user interfaces", "Server-side scripting", "Database management", "Styling pages"],
+          "options": [
+            "Building user interfaces",
+            "Server-side scripting",
+            "Database management",
+            "Styling pages"
+          ],
           "correctAnswer": "Building user interfaces"
         },
         {
           "id": 2,
           "questionText": "How do you define a Vue component?",
-          "options": ["Vue.component()", "Vue.define()", "Vue.create()", "Vue.module()"],
+          "options": [
+            "Vue.component()",
+            "Vue.define()",
+            "Vue.create()",
+            "Vue.module()"
+          ],
           "correctAnswer": "Vue.component()"
         },
         {
           "id": 3,
           "questionText": "What is the purpose of the v-bind directive?",
-          "options": ["Bind data to attributes", "Handle events", "Loop over data", "Conditionally render"],
+          "options": [
+            "Bind data to attributes",
+            "Handle events",
+            "Loop over data",
+            "Conditionally render"
+          ],
           "correctAnswer": "Bind data to attributes"
         },
         {
           "id": 4,
           "questionText": "How do you handle events in Vue?",
-          "options": ["v-on:click", "v-bind:click", "v-click", "v-event"],
+          "options": [
+            "v-on:click",
+            "v-bind:click",
+            "v-click",
+            "v-event"
+          ],
           "correctAnswer": "v-on:click"
         },
         {
           "id": 5,
           "questionText": "What is the purpose of the v-if directive?",
-          "options": ["Conditionally render elements", "Loop over data", "Bind data", "Handle events"],
+          "options": [
+            "Conditionally render elements",
+            "Loop over data",
+            "Bind data",
+            "Handle events"
+          ],
           "correctAnswer": "Conditionally render elements"
         },
         {
           "id": 6,
           "questionText": "How do you define reactive data in Vue 3?",
-          "options": ["ref() or reactive()", "data()", "state()", "computed()"],
+          "options": [
+            "ref() or reactive()",
+            "data()",
+            "state()",
+            "computed()"
+          ],
           "correctAnswer": "ref() or reactive()"
         },
         {
           "id": 7,
           "questionText": "What is the purpose of computed properties in Vue?",
-          "options": ["Cache derived data", "Store static data", "Handle events", "Style components"],
+          "options": [
+            "Cache derived data",
+            "Store static data",
+            "Handle events",
+            "Style components"
+          ],
           "correctAnswer": "Cache derived data"
         },
         {
           "id": 8,
           "questionText": "How do you loop over a list in Vue?",
-          "options": ["v-for", "v-loop", "v-foreach", "v-iterate"],
+          "options": [
+            "v-for",
+            "v-loop",
+            "v-foreach",
+            "v-iterate"
+          ],
           "correctAnswer": "v-for"
         },
         {
           "id": 9,
           "questionText": "What is the Vue CLI used for?",
-          "options": ["Scaffold Vue projects", "Style components", "Manage routing", "Fetch data"],
+          "options": [
+            "Scaffold Vue projects",
+            "Style components",
+            "Manage routing",
+            "Fetch data"
+          ],
           "correctAnswer": "Scaffold Vue projects"
         },
         {
           "id": 10,
           "questionText": "How do you pass data from a parent to a child component in Vue?",
-          "options": ["Props", "State", "Events", "Context"],
+          "options": [
+            "Props",
+            "State",
+            "Events",
+            "Context"
+          ],
           "correctAnswer": "Props"
         },
         {
           "id": 11,
           "questionText": "What is the purpose of the v-model directive?",
-          "options": ["Two-way data binding", "One-way data binding", "Event handling", "Styling"],
+          "options": [
+            "Two-way data binding",
+            "One-way data binding",
+            "Event handling",
+            "Styling"
+          ],
           "correctAnswer": "Two-way data binding"
         },
         {
           "id": 12,
           "questionText": "How do you define a method in a Vue component?",
-          "options": ["methods: {}", "functions: {}", "actions: {}", "events: {}"],
+          "options": [
+            "methods: {}",
+            "functions: {}",
+            "actions: {}",
+            "events: {}"
+          ],
           "correctAnswer": "methods: {}"
         },
         {
           "id": 13,
           "questionText": "What is Vue Router used for?",
-          "options": ["Client-side routing", "Server-side routing", "Data fetching", "State management"],
+          "options": [
+            "Client-side routing",
+            "Server-side routing",
+            "Data fetching",
+            "State management"
+          ],
           "correctAnswer": "Client-side routing"
         },
         {
           "id": 14,
           "questionText": "What is the purpose of the watch property in Vue?",
-          "options": ["Monitor data changes", "Render templates", "Handle events", "Style components"],
+          "options": [
+            "Monitor data changes",
+            "Render templates",
+            "Handle events",
+            "Style components"
+          ],
           "correctAnswer": "Monitor data changes"
         },
         {
           "id": 15,
           "questionText": "How do you create a Vue 3 app?",
-          "options": ["createApp()", "new Vue()", "Vue.create()", "Vue.app()"],
+          "options": [
+            "createApp()",
+            "new Vue()",
+            "Vue.create()",
+            "Vue.app()"
+          ],
           "correctAnswer": "createApp()"
         },
         {
           "id": 16,
           "questionText": "What is the purpose of the setup() function in Vue 3?",
-          "options": ["Define reactive data and methods", "Render templates", "Handle routing", "Style components"],
+          "options": [
+            "Define reactive data and methods",
+            "Render templates",
+            "Handle routing",
+            "Style components"
+          ],
           "correctAnswer": "Define reactive data and methods"
         },
         {
           "id": 17,
           "questionText": "How do you emit an event from a child to a parent component?",
-          "options": ["$emit", "$on", "$dispatch", "$broadcast"],
+          "options": [
+            "$emit",
+            "$on",
+            "$dispatch",
+            "$broadcast"
+          ],
           "correctAnswer": "$emit"
         },
         {
           "id": 18,
           "questionText": "What is the purpose of Vuex in Vue?",
-          "options": ["State management", "Routing", "Data fetching", "Styling"],
+          "options": [
+            "State management",
+            "Routing",
+            "Data fetching",
+            "Styling"
+          ],
           "correctAnswer": "State management"
         },
         {
           "id": 19,
           "questionText": "How do you define a slot in a Vue component?",
-          "options": ["<slot>", "<template>", "<div>", "<component>"],
+          "options": [
+            "<slot>",
+            "<template>",
+            "<div>",
+            "<component>"
+          ],
           "correctAnswer": "<slot>"
         },
         {
           "id": 20,
           "questionText": "What is the benefit of using Vue's reactivity system?",
-          "options": ["Automatic UI updates", "Faster rendering", "Better styling", "Easier routing"],
+          "options": [
+            "Automatic UI updates",
+            "Faster rendering",
+            "Better styling",
+            "Easier routing"
+          ],
           "correctAnswer": "Automatic UI updates"
         }
       ]
@@ -813,121 +1412,221 @@
         {
           "id": 1,
           "questionText": "What is a semantic element in HTML5?",
-          "options": ["A tag with meaning about content", "A styling tag", "A scripting tag", "A layout tag"],
+          "options": [
+            "A tag with meaning about content",
+            "A styling tag",
+            "A scripting tag",
+            "A layout tag"
+          ],
           "correctAnswer": "A tag with meaning about content"
         },
         {
           "id": 2,
           "questionText": "Which HTML5 tag is used for the main content of a page?",
-          "options": ["<main>", "<section>", "<article>", "<div>"],
+          "options": [
+            "<main>",
+            "<section>",
+            "<article>",
+            "<div>"
+          ],
           "correctAnswer": "<main>"
         },
         {
           "id": 3,
           "questionText": "What is the purpose of the <header> tag?",
-          "options": ["Define introductory content", "Define a footer", "Define a sidebar", "Define a section"],
+          "options": [
+            "Define introductory content",
+            "Define a footer",
+            "Define a sidebar",
+            "Define a section"
+          ],
           "correctAnswer": "Define introductory content"
         },
         {
           "id": 4,
           "questionText": "Which HTML5 tag is used for standalone content?",
-          "options": ["<article>", "<section>", "<aside>", "<div>"],
+          "options": [
+            "<article>",
+            "<section>",
+            "<aside>",
+            "<div>"
+          ],
           "correctAnswer": "<article>"
         },
         {
           "id": 5,
           "questionText": "What is the purpose of the <footer> tag?",
-          "options": ["Define footer content", "Define a header", "Define a section", "Define a sidebar"],
+          "options": [
+            "Define footer content",
+            "Define a header",
+            "Define a section",
+            "Define a sidebar"
+          ],
           "correctAnswer": "Define footer content"
         },
         {
           "id": 6,
           "questionText": "Which tag is used to group related elements?",
-          "options": ["<section>", "<article>", "<div>", "<main>"],
+          "options": [
+            "<section>",
+            "<article>",
+            "<div>",
+            "<main>"
+          ],
           "correctAnswer": "<section>"
         },
         {
           "id": 7,
           "questionText": "What is the purpose of the <nav> tag?",
-          "options": ["Define navigation links", "Define a footer", "Define a header", "Define content"],
+          "options": [
+            "Define navigation links",
+            "Define a footer",
+            "Define a header",
+            "Define content"
+          ],
           "correctAnswer": "Define navigation links"
         },
         {
           "id": 8,
           "questionText": "Which HTML5 tag is used for content aside from the main content?",
-          "options": ["<aside>", "<section>", "<article>", "<div>"],
+          "options": [
+            "<aside>",
+            "<section>",
+            "<article>",
+            "<div>"
+          ],
           "correctAnswer": "<aside>"
         },
         {
           "id": 9,
           "questionText": "What is the purpose of the <figure> tag?",
-          "options": ["Group media with a caption", "Define a section", "Define a footer", "Define a header"],
+          "options": [
+            "Group media with a caption",
+            "Define a section",
+            "Define a footer",
+            "Define a header"
+          ],
           "correctAnswer": "Group media with a caption"
         },
         {
           "id": 10,
           "questionText": "Which tag is used for captions in a <figure> element?",
-          "options": ["<figcaption>", "<caption>", "<title>", "<label>"],
+          "options": [
+            "<figcaption>",
+            "<caption>",
+            "<title>",
+            "<label>"
+          ],
           "correctAnswer": "<figcaption>"
         },
         {
           "id": 11,
           "questionText": "What is the benefit of semantic HTML?",
-          "options": ["Improved accessibility and SEO", "Faster rendering", "Better styling", "Easier scripting"],
+          "options": [
+            "Improved accessibility and SEO",
+            "Faster rendering",
+            "Better styling",
+            "Easier scripting"
+          ],
           "correctAnswer": "Improved accessibility and SEO"
         },
         {
           "id": 12,
           "questionText": "Which HTML5 tag is used for embedded audio?",
-          "options": ["<audio>", "<video>", "<embed>", "<media>"],
+          "options": [
+            "<audio>",
+            "<video>",
+            "<embed>",
+            "<media>"
+          ],
           "correctAnswer": "<audio>"
         },
         {
           "id": 13,
           "questionText": "Which HTML5 tag is used for embedded video?",
-          "options": ["<video>", "<audio>", "<embed>", "<media>"],
+          "options": [
+            "<video>",
+            "<audio>",
+            "<embed>",
+            "<media>"
+          ],
           "correctAnswer": "<video>"
         },
         {
           "id": 14,
           "questionText": "What is the purpose of the <canvas> tag?",
-          "options": ["Draw graphics via JavaScript", "Embed video", "Define a section", "Style content"],
+          "options": [
+            "Draw graphics via JavaScript",
+            "Embed video",
+            "Define a section",
+            "Style content"
+          ],
           "correctAnswer": "Draw graphics via JavaScript"
         },
         {
           "id": 15,
           "questionText": "Which attribute is required for the <audio> tag to specify the source?",
-          "options": ["src", "href", "link", "url"],
+          "options": [
+            "src",
+            "href",
+            "link",
+            "url"
+          ],
           "correctAnswer": "src"
         },
         {
           "id": 16,
           "questionText": "What is the purpose of the <time> tag?",
-          "options": ["Represent a specific time or date", "Define a timer", "Style text", "Embed media"],
+          "options": [
+            "Represent a specific time or date",
+            "Define a timer",
+            "Style text",
+            "Embed media"
+          ],
           "correctAnswer": "Represent a specific time or date"
         },
         {
           "id": 17,
           "questionText": "Which HTML5 tag is used to mark text as important?",
-          "options": ["<mark>", "<strong>", "<em>", "<bold>"],
+          "options": [
+            "<mark>",
+            "<strong>",
+            "<em>",
+            "<bold>"
+          ],
           "correctAnswer": "<mark>"
         },
         {
           "id": 18,
           "questionText": "What is the purpose of the <details> tag?",
-          "options": ["Create collapsible content", "Define a section", "Embed media", "Style text"],
+          "options": [
+            "Create collapsible content",
+            "Define a section",
+            "Embed media",
+            "Style text"
+          ],
           "correctAnswer": "Create collapsible content"
         },
         {
           "id": 19,
           "questionText": "Which tag is used inside <details> for a summary?",
-          "options": ["<summary>", "<title>", "<caption>", "<label>"],
+          "options": [
+            "<summary>",
+            "<title>",
+            "<caption>",
+            "<label>"
+          ],
           "correctAnswer": "<summary>"
         },
         {
           "id": 20,
           "questionText": "What is the purpose of the data-* attribute in HTML5?",
-          "options": ["Store custom data", "Style elements", "Handle events", "Define routes"],
+          "options": [
+            "Store custom data",
+            "Style elements",
+            "Handle events",
+            "Define routes"
+          ],
           "correctAnswer": "Store custom data"
         }
       ]
@@ -942,127 +1641,282 @@
         {
           "id": 1,
           "questionText": "What CSS property enables Flexbox?",
-          "options": ["display: flex;", "display: grid;", "flex: true;", "layout: flex;"],
+          "options": [
+            "display: flex;",
+            "display: grid;",
+            "flex: true;",
+            "layout: flex;"
+          ],
           "correctAnswer": "display: flex;"
         },
         {
           "id": 2,
           "questionText": "How do you align items along the main axis in Flexbox?",
-          "options": ["justify-content", "align-items", "flex-align", "align-content"],
+          "options": [
+            "justify-content",
+            "align-items",
+            "flex-align",
+            "align-content"
+          ],
           "correctAnswer": "justify-content"
         },
         {
           "id": 3,
           "questionText": "What does the 'flex' shorthand property include?",
-          "options": ["flex-grow, flex-shrink, flex-basis", "flex-align, flex-justify", "flex-wrap, flex-flow", "flex-start, flex-end"],
+          "options": [
+            "flex-grow, flex-shrink, flex-basis",
+            "flex-align, flex-justify",
+            "flex-wrap, flex-flow",
+            "flex-start, flex-end"
+          ],
           "correctAnswer": "flex-grow, flex-shrink, flex-basis"
         },
         {
           "id": 4,
           "questionText": "How do you make a flex item take up remaining space?",
-          "options": ["flex-grow: 1;", "flex-shrink: 1;", "flex-basis: auto;", "flex: auto;"],
+          "options": [
+            "flex-grow: 1;",
+            "flex-shrink: 1;",
+            "flex-basis: auto;",
+            "flex: auto;"
+          ],
           "correctAnswer": "flex-grow: 1;"
         },
         {
           "id": 5,
           "questionText": "What is the purpose of the 'align-items' property in Flexbox?",
-          "options": ["Align items along the cross axis", "Align items along the main axis", "Wrap items", "Space items evenly"],
+          "options": [
+            "Align items along the cross axis",
+            "Align items along the main axis",
+            "Wrap items",
+            "Space items evenly"
+          ],
           "correctAnswer": "Align items along the cross axis"
         },
         {
           "id": 6,
           "questionText": "How do you enable CSS Grid?",
-          "options": ["display: grid;", "display: flex;", "grid: true;", "layout: grid;"],
+          "options": [
+            "display: grid;",
+            "display: flex;",
+            "grid: true;",
+            "layout: grid;"
+          ],
           "correctAnswer": "display: grid;"
         },
         {
           "id": 7,
           "questionText": "What is the purpose of 'grid-template-columns'?",
-          "options": ["Define column sizes", "Define row sizes", "Align items", "Space items"],
+          "options": [
+            "Define column sizes",
+            "Define row sizes",
+            "Align items",
+            "Space items"
+          ],
           "correctAnswer": "Define column sizes"
         },
         {
           "id": 8,
           "questionText": "How do you create a grid with 3 equal columns?",
-          "options": ["grid-template-columns: 1fr 1fr 1fr;", "grid-columns: 3;", "grid-template: 1fr;", "grid: 1fr 1fr 1fr;"],
+          "options": [
+            "grid-template-columns: 1fr 1fr 1fr;",
+            "grid-columns: 3;",
+            "grid-template: 1fr;",
+            "grid: 1fr 1fr 1fr;"
+          ],
           "correctAnswer": "grid-template-columns: 1fr 1fr 1fr;"
         },
         {
           "id": 9,
           "questionText": "What does 'fr' stand for in CSS Grid?",
-          "options": ["Fractional unit", "Fixed ratio", "Flexible row", "Fractional row"],
+          "options": [
+            "Fractional unit",
+            "Fixed ratio",
+            "Flexible row",
+            "Fractional row"
+          ],
           "correctAnswer": "Fractional unit"
         },
         {
           "id": 10,
           "questionText": "How do you align items in a grid along the column axis?",
-          "options": ["justify-items", "align-items", "place-items", "grid-align"],
+          "options": [
+            "justify-items",
+            "align-items",
+            "place-items",
+            "grid-align"
+          ],
           "correctAnswer": "justify-items"
         },
         {
           "id": 11,
           "questionText": "What is the purpose of 'flex-wrap' in Flexbox?",
-          "options": ["Allow items to wrap to new lines", "Align items", "Space items", "Shrink items"],
+          "options": [
+            "Allow items to wrap to new lines",
+            "Align items",
+            "Space items",
+            "Shrink items"
+          ],
           "correctAnswer": "Allow items to wrap to new lines"
         },
         {
           "id": 12,
           "questionText": "How do you span an item across multiple grid columns?",
-          "options": ["grid-column: span 2;", "grid-span: 2;", "span: 2;", "grid-column: 2;"],
+          "options": [
+            "grid-column: span 2;",
+            "grid-span: 2;",
+            "span: 2;",
+            "grid-column: 2;"
+          ],
           "correctAnswer": "grid-column: span 2;"
         },
         {
           "id": 13,
           "questionText": "What is the default value of 'flex-direction'?",
-          "options": ["row", "column", "row-reverse", "column-reverse"],
+          "options": [
+            "row",
+            "column",
+            "row-reverse",
+            "column-reverse"
+          ],
           "correctAnswer": "row"
         },
         {
           "id": 14,
           "questionText": "How do you center a flex item both horizontally and vertically?",
-          "options": ["justify-content: center; align-items: center;", "align: center;", "place-items: center;", "center: flex;"],
+          "options": [
+            "justify-content: center; align-items: center;",
+            "align: center;",
+            "place-items: center;",
+            "center: flex;"
+          ],
           "correctAnswer": "justify-content: center; align-items: center;"
         },
         {
           "id": 15,
           "questionText": "What is the purpose of 'grid-gap'?",
-          "options": ["Set spacing between grid items", "Set column sizes", "Align grid items", "Wrap grid items"],
+          "options": [
+            "Set spacing between grid items",
+            "Set column sizes",
+            "Align grid items",
+            "Wrap grid items"
+          ],
           "correctAnswer": "Set spacing between grid items"
         },
         {
           "id": 16,
           "questionText": "How do you make a flex item shrink proportionally?",
-          "options": ["flex-shrink: 1;", "flex-grow: 1;", "flex: 1;", "shrink: 1;"],
+          "options": [
+            "flex-shrink: 1;",
+            "flex-grow: 1;",
+            "flex: 1;",
+            "shrink: 1;"
+          ],
           "correctAnswer": "flex-shrink: 1;"
         },
         {
           "id": 17,
           "questionText": "What is the purpose of 'place-items' in CSS Grid?",
-          "options": ["Shorthand for align-items and justify-items", "Set column sizes", "Define row sizes", "Space items"],
+          "options": [
+            "Shorthand for align-items and justify-items",
+            "Set column sizes",
+            "Define row sizes",
+            "Space items"
+          ],
           "correctAnswer": "Shorthand for align-items and justify-items"
         },
         {
           "id": 18,
           "questionText": "How do you reverse the order of flex items?",
-          "options": ["flex-direction: row-reverse;", "flex-order: reverse;", "order: reverse;", "flex: reverse;"],
+          "options": [
+            "flex-direction: row-reverse;",
+            "flex-order: reverse;",
+            "order: reverse;",
+            "flex: reverse;"
+          ],
           "correctAnswer": "flex-direction: row-reverse;"
         },
         {
           "id": 19,
           "questionText": "What is the purpose of 'grid-auto-rows'?",
-          "options": ["Set size for implicit rows", "Set size for columns", "Align items", "Space items"],
+          "options": [
+            "Set size for implicit rows",
+            "Set size for columns",
+            "Align items",
+            "Space items"
+          ],
           "correctAnswer": "Set size for implicit rows"
         },
         {
           "id": 20,
           "questionText": "How do you make a flex container wrap items to the next line?",
-          "options": ["flex-wrap: wrap;", "flex-flow: wrap;", "wrap: true;", "flex: wrap;"],
+          "options": [
+            "flex-wrap: wrap;",
+            "flex-flow: wrap;",
+            "wrap: true;",
+            "flex: wrap;"
+          ],
           "correctAnswer": "flex-wrap: wrap;"
         }
       ]
     }
   ],
-
-  "results":[]
-
+  "results": [
+    {
+      "examId": 3,
+      "score": 0,
+      "submittedAt": "2025-06-04T18:51:06.671Z",
+      "studentId": 1,
+      "id": 1
+    },
+    {
+      "examId": 1,
+      "score": 0,
+      "submittedAt": "2025-06-04T18:51:52.576Z",
+      "studentId": 1,
+      "id": 2
+    },
+    {
+      "examId": 6,
+      "score": 0,
+      "submittedAt": "2025-06-04T18:51:58.001Z",
+      "studentId": 1,
+      "id": 3
+    },
+    {
+      "examId": 1,
+      "score": 0,
+      "submittedAt": "2025-06-04T18:56:24.898Z",
+      "studentId": 1,
+      "id": 4
+    },
+    {
+      "examId": 6,
+      "score": 2,
+      "submittedAt": "2025-06-04T18:59:50.487Z",
+      "studentId": 1,
+      "id": 5
+    },
+    {
+      "examId": 6,
+      "score": 2,
+      "submittedAt": "2025-06-04T19:00:06.280Z",
+      "studentId": 1,
+      "id": 6
+    },
+    {
+      "examId": 6,
+      "score": 1,
+      "submittedAt": "2025-06-04T19:02:11.488Z",
+      "studentId": 1,
+      "id": 7
+    },
+    {
+      "examId": 6,
+      "score": 1,
+      "submittedAt": "2025-06-04T19:02:35.872Z",
+      "studentId": 1,
+      "id": 8
+    }
+  ]
 }

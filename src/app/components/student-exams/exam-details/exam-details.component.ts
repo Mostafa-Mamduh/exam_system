@@ -25,9 +25,11 @@ export class ExamDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.examId = Number(this._ActivatedRoute.snapshot.paramMap.get('id'));
     this._ExamsService.getExamById(this.examId).subscribe({
-      next: () => console.log('Result sent successfully'),
-      error: (err) => console.error('Error sending result:', err)
-    });
+      next : (res)=> {
+        this.currentExam = res;
+        console.log(this.currentExam)
+      }
+    })
   }
   calcResult() {
     let score = 0;
@@ -41,11 +43,16 @@ export class ExamDetailsComponent implements OnInit {
 
     const total = this.currentExam?.questions.length ?? 0;
      this._ResultService.addResult(this.examId ,score).subscribe({
-      next:(value)=>{
-        console.log(value);
-        console.log('asd');
-      }
-    })
+     next: (response) => {
+      console.log('Result added successfully:', response);
+      alert(`Your score is ${score} out of ${total}`);
+    },
+    error: (err) => {
+      console.error('Error sending result:', err);
+      alert('Failed to save result. Please try again.');
+    }
+     }
+  )
     alert(`Your score is ${score} out of ${total}`);
 
     console.log(this.userAnswers);
