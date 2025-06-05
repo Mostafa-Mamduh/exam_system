@@ -1,5 +1,5 @@
 import { ResultService } from './../../../services/result.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ExamsService } from './../../../services/exams.service';
 import { Component, OnInit } from '@angular/core';
 import { Iexam } from '../../../models/iexam';
@@ -20,7 +20,8 @@ export class ExamDetailsComponent implements OnInit {
   constructor(
     private _ExamsService: ExamsService,
     private _ActivatedRoute: ActivatedRoute,
-    private _ResultService : ResultService
+    private _ResultService : ResultService,
+    private _Router: Router
   ) {}
   ngOnInit(): void {
     this.examId = Number(this._ActivatedRoute.snapshot.paramMap.get('id'));
@@ -46,6 +47,7 @@ export class ExamDetailsComponent implements OnInit {
      next: (response) => {
       console.log('Result added successfully:', response);
       alert(`Your score is ${score} out of ${total}`);
+      this._Router.navigateByUrl(`/exams`)
     },
     error: (err) => {
       console.error('Error sending result:', err);
@@ -53,7 +55,7 @@ export class ExamDetailsComponent implements OnInit {
     }
      }
   )
-    alert(`Your score is ${score} out of ${total}`);
+    // alert(`Your score is ${score} out of ${total}`);
 
     console.log(this.userAnswers);
   }

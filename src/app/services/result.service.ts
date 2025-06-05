@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { Observable } from 'rxjs';
+import { Iresult } from '../models/iresult';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +18,7 @@ export class ResultService {
 
   return this._HttpClient.post(`${environment.appUrl}/results`, result);
   }
-
+  getAllResults():Observable<Iresult[]>{
+    return this._HttpClient.get<Iresult[]>(`${environment.appUrl}/results`)
+  }
 }

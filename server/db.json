@@ -1863,60 +1863,25 @@
   ],
   "results": [
     {
-      "examId": 3,
-      "score": 0,
-      "submittedAt": "2025-06-04T18:51:06.671Z",
+      "examId": 1,
+      "score": 2,
+      "submittedAt": "2025-06-05T03:20:28.387Z",
       "studentId": 1,
       "id": 1
     },
     {
-      "examId": 1,
-      "score": 0,
-      "submittedAt": "2025-06-04T18:51:52.576Z",
+      "examId": 3,
+      "score": 19,
+      "submittedAt": "2025-06-05T11:45:45.141Z",
       "studentId": 1,
       "id": 2
     },
     {
-      "examId": 6,
+      "examId": 4,
       "score": 0,
-      "submittedAt": "2025-06-04T18:51:58.001Z",
-      "studentId": 1,
-      "id": 3
-    },
-    {
-      "examId": 1,
-      "score": 0,
-      "submittedAt": "2025-06-04T18:56:24.898Z",
+      "submittedAt": "2025-06-05T11:49:05.829Z",
       "studentId": 1,
       "id": 4
-    },
-    {
-      "examId": 6,
-      "score": 2,
-      "submittedAt": "2025-06-04T18:59:50.487Z",
-      "studentId": 1,
-      "id": 5
-    },
-    {
-      "examId": 6,
-      "score": 2,
-      "submittedAt": "2025-06-04T19:00:06.280Z",
-      "studentId": 1,
-      "id": 6
-    },
-    {
-      "examId": 6,
-      "score": 1,
-      "submittedAt": "2025-06-04T19:02:11.488Z",
-      "studentId": 1,
-      "id": 7
-    },
-    {
-      "examId": 6,
-      "score": 1,
-      "submittedAt": "2025-06-04T19:02:35.872Z",
-      "studentId": 1,
-      "id": 8
     }
   ]
 }
