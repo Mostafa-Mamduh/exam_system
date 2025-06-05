@@ -1910,6 +1910,13 @@
       "score": 5,
       "submittedAt": "2025-06-05T13:36:02.362Z",
       "studentId": "1"
+    },
+    {
+      "id": "552c",
+      "examId": 2,
+      "score": 5,
+      "submittedAt": "2025-06-05T14:57:32.629Z",
+      "studentId": "1"
     }
   ]
 }
