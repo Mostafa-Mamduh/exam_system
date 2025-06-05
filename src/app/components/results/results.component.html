@@ -1,1 +1,51 @@
-<p>results works!</p>
+<!-- results.component.html -->
+<!-- <app-navbar></app-navbar> -->
+<div class="results-page">
+  <div class="container py-5">
+    <h1 class="page-title text-center mb-5">Your Exam Results</h1>
+
+    <!-- Display results dynamically -->
+    <div class="row g-4" *ngIf="results.length && exams.length; else noResults">
+      <div class="col-sm-6 col-md-4" *ngFor="let result of results; let i = index">
+        <div class="result-card card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">{{ exams[i]?.title }}</h5>
+            <p class="card-text mb-2">
+              <strong>Score:</strong> {{ result.score }} / 20
+            </p>
+            <p class="card-text mb-2">
+              <strong>Percentage:</strong> {{ (result.score / 20 * 100) | number:'1.2-2' }}%
+            </p>
+            <p class="card-text text-muted">
+              <strong>Submitted:</strong> {{ result.submittedAt| date:'MMM d, yyyy' }}
+            </p>
+            <div class="progress mt-3">
+              <div
+                class="progress-bar"
+                [ngClass]="{
+                  'bg-success': (result.score / 20 * 100) >= 70,
+                  'bg-warning': (result.score / 20 * 100) >= 50 && (result.score / 20 * 100) < 70,
+                  'bg-danger': (result.score / 20 * 100) < 50
+                }"
+                [style.width]="(result.score / 20 * 100) + '%'"
+                role="progressbar"
+                [attr.aria-valuenow]="(result.score / 20 * 100)"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- No results message -->
+    <ng-template #noResults>
+      <div class="col-12">
+        <div class="alert alert-info text-center">
+          No results found. Complete an exam to see your results!
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

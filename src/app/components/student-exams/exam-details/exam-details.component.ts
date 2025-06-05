@@ -1,5 +1,5 @@
 import { ResultService } from './../../../services/result.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ExamsService } from './../../../services/exams.service';
 import { Component, OnInit } from '@angular/core';
 import { Iexam } from '../../../models/iexam';
@@ -20,14 +20,17 @@ export class ExamDetailsComponent implements OnInit {
   constructor(
     private _ExamsService: ExamsService,
     private _ActivatedRoute: ActivatedRoute,
-    private _ResultService : ResultService
+    private _ResultService : ResultService,
+    private _Router: Router
   ) {}
   ngOnInit(): void {
     this.examId = Number(this._ActivatedRoute.snapshot.paramMap.get('id'));
     this._ExamsService.getExamById(this.examId).subscribe({
-      next: () => console.log('Result sent successfully'),
-      error: (err) => console.error('Error sending result:', err)
-    });
+      next : (res)=> {
+        this.currentExam = res;
+        console.log(this.currentExam)
+      }
+    })
   }
   calcResult() {
     let score = 0;
@@ -41,12 +44,18 @@ export class ExamDetailsComponent implements OnInit {
 
     const total = this.currentExam?.questions.length ?? 0;
      this._ResultService.addResult(this.examId ,score).subscribe({
-      next:(value)=>{
-        console.log(value);
-        console.log('asd');
-      }
-    })
-    alert(`Your score is ${score} out of ${total}`);
+     next: (response) => {
+      console.log('Result added successfully:', response);
+      alert(`Your score is ${score} out of ${total}`);
+      this._Router.navigateByUrl(`/exams`)
+    },
+    error: (err) => {
+      console.error('Error sending result:', err);
+      alert('Failed to save result. Please try again.');
+    }
+     }
+  )
+    // alert(`Your score is ${score} out of ${total}`);
 
     console.log(this.userAnswers);
   }
