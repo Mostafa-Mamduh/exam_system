@@ -1,119 +1,112 @@
-/* .exam-card {
-  background: linear-gradient(135deg, #ffffff, #f8f9fa);
-  border: none;
-  border-radius: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
+/* خلفية الصفحة بشكل كامل */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.exam-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.exam-card .card-title {
-  font-weight: bold;
-  color: #2c3e50;
-  font-size: 1.2rem;
-}
-
-.exam-card .card-text {
-  color: #6c757d;
-  font-size: 0.95rem;
-}
-
-.duration-badge {
-  display: inline-block;
-  background-color: #0d6efd;
-  color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
-  font-size: 0.8rem;
-  margin-bottom: 0.75rem;
-  align-self: flex-start;
-} */
-  
 
 .container.mt-4 {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   min-height: 100vh;
+  width: 100%;
   padding: 2rem;
+  background-color: #f0f4f8; /* أزرق رمادي هادي */
 }
 
 
+/* كروت الامتحانات */
 .exam-card {
-  border-radius: 15px !important;
-  border: none !important;
-  transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.2) !important; 
-  backdrop-filter: blur(10px); 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  color: #1f2937;
 }
 
 .exam-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* محتوى البطاقة */
 .card-body {
   padding: 1.5rem;
-  color: #495057; 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-
-.alert.alert-info {
-  background: rgba(255, 255, 255, 0.2) !important;
-  border: none;
-  border-radius: 15px;
-  padding: 3rem;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  margin: 2rem auto;
-  max-width: 600px;
-  animation: fadeIn 0.6s ease-out;
-  color: #495057;
+/* العنوان */
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 0.25rem;
 }
 
-.alert.alert-info::before {
-  content: "📭"; 
-  font-size: 3rem;
-  display: block;
-  margin-bottom: 1.5rem;
+/* النص */
+.card-text {
+  color: #2c3e50;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-
+/* زر الامتحان */
 .btn-primary {
-  background-color: rgba(52, 152, 219, 0.9) !important;
-  border: none !important;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  transition: all 0.3s;
+  background-color: #3b82f6 !important;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-primary:hover {
-  background-color: rgba(41, 128, 185, 0.9) !important;
+  background-color: #2563eb !important;
   transform: translateY(-2px);
 }
 
+/* تنسيق رسالة لا توجد امتحانات */
+.alert.alert-info {
+  background-color: #f8fafc;
+  color: #1e293b;
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.alert.alert-info::before {
+  content: "📭";
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .container.mt-4 {
     padding: 1rem;
   }
-  
-  .alert.alert-info {
-    padding: 2rem 1rem;
+
+  .card-title {
+    font-size: 1.2rem;
   }
-  
-  .exam-card, .alert.alert-info {
-    backdrop-filter: blur(5px); 
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    padding: 10px 16px;
   }
 }

@@ -1,63 +1,61 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body> -->
-  <div class="dashboard">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2 class="logo"><i class="fas fa-chart-line"></i> Admin</h2>
-      <ul class="nav">
-        <li><a href="#"><i class="fas fa-home"></i> <span>Home</span></a></li>
-        <li><a href="#"><i class="fas fa-user"></i> <span>Profile</span></a></li>
-        <li><a href="#"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
-        <li><a href="#"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
-      </ul>
-    </aside>
+<div class="dashboard">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo"><i class="fas fa-chart-line"></i> Admin</h2>
+    <ul class="nav">
+      <li><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+      <!-- <li><a href="#"><i class="fas fa-user"></i><span>Profile</span></a></li> -->
+      <li><a href="#"><i class="fas fa-cog"></i><span>Results</span></a></li>
+      <li><a href="#"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+    </ul>
+  </aside>
 
-    <!-- Main -->
-    <div class="main">
-      <!-- Header -->
-      <header class="header">
-        <h1>Dashboard</h1>
-        <div class="user-info">
-          <i class="fas fa-bell"></i>
-          <i class="fas fa-user-circle"></i>
+  <!-- Main content -->
+  <div class="main">
+    <!-- <header class="header">
+      <h1>Admin Page</h1>
+      <div class="user-info">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-user-circle"></i>
+      </div>
+    </header> -->
+
+    <div class="container">
+      <div class="cards-wrapper">
+        <div class="exam-card">
+          <h5>Frontend Basics</h5>
+          <p>Test about HTML, CSS, JS</p>
+          <div class="buttons">
+            <button class="btn-update">Update</button>
+            <button class="btn-delete">Delete</button>
+          </div>
         </div>
-      </header>
-
-      <!-- Content -->
-      <!-- Content -->
-<div class="content">
-  <div class="bar-chart">
-    <div class="bar-wrapper">
-      <div class="bar" style="height: 80%;"></div>
-      <div class="bar-label">Scored 50</div>
-    </div>
-    <div class="bar-wrapper">
-      <div class="bar" style="height: 60%;"></div>
-      <div class="bar-label">Scored 40</div>
-    </div>
-    <div class="bar-wrapper">
-      <div class="bar" style="height: 40%;"></div>
-      <div class="bar-label">Scored 30</div>
-    </div>
-    <div class="bar-wrapper">
-      <div class="bar" style="height: 70%;"></div>
-      <div class="bar-label">Exam A</div>
-    </div>
-    <div class="bar-wrapper">
-      <div class="bar" style="height: 90%;"></div>
-      <div class="bar-label">Registrations</div>
+        <div class="exam-card">
+          <h5>JavaScript Fundamentals</h5>
+          <p>Covers basic concepts of JavaScript</p>
+          <div class="buttons">
+            <button class="btn-update">Update</button>
+            <button class="btn-delete">Delete</button>
+          </div>
+        </div>
+        <div class="exam-card">
+          <h5>TypeScript Essentials</h5>
+          <p>Test your TypeScript skills</p>
+          <div class="buttons">
+            <button class="btn-update">Update</button>
+            <button class="btn-delete">Delete</button>
+          </div>
+        </div>
+        <div class="exam-card">
+          <h5>Angular Core</h5>
+          <p>Covers core concepts of Angular framework</p>
+          <div class="buttons">
+            <button class="btn-update">Update</button>
+            <button class="btn-delete">Delete</button>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </div>
 </div>
-
-    </div>
-  </div>
-

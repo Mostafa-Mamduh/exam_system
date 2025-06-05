@@ -6,7 +6,7 @@
       "password": "Asd123@@",
       "confirmPassword": "Asd123@@",
       "remembered": false,
-      "id": 1
+      "id": "1"
     },
     {
       "name": "Keemo",
@@ -15,7 +15,7 @@
       "confirmPassword": "Asd123@@",
       "remembered": false,
       "role": "student",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "Keemo",
@@ -24,12 +24,12 @@
       "confirmPassword": "Asd123@@",
       "remembered": true,
       "role": "student",
-      "id": 3
+      "id": "3"
     }
   ],
   "exams": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Frontend Basics",
       "description": "Test about HTML, CSS, JS",
       "duration": 30,
@@ -258,7 +258,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "JavaScript Fundamentals",
       "description": "Covers basic concepts of JavaScript",
       "duration": 40,
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "TypeScript Essentials",
       "description": "Test your TypeScript skills",
       "duration": 45,
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Angular Core",
       "description": "Covers core concepts of Angular framework",
       "duration": 50,
@@ -945,7 +945,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "React Basics",
       "description": "Introductory test on React JS",
       "duration": 35,
@@ -1174,7 +1174,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Vue.js Overview",
       "description": "Vue fundamentals and syntax test",
       "duration": 35,
@@ -1403,7 +1403,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "HTML5 & Semantic Elements",
       "description": "Semantic tags and HTML5 structure",
       "duration": 25,
@@ -1632,7 +1632,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "CSS Flexbox & Grid",
       "description": "Test on layout systems using Flexbox and Grid",
       "duration": 30,
@@ -1867,42 +1867,49 @@
       "score": 2,
       "submittedAt": "2025-06-05T03:20:28.387Z",
       "studentId": 1,
-      "id": 1
+      "id": "1"
     },
     {
       "examId": 3,
       "score": 19,
       "submittedAt": "2025-06-05T11:45:45.141Z",
       "studentId": 1,
-      "id": 2
+      "id": "2"
     },
     {
       "examId": 4,
       "score": 0,
       "submittedAt": "2025-06-05T11:49:05.829Z",
       "studentId": 1,
-      "id": 4
+      "id": "4"
     },
     {
       "examId": 6,
       "score": 5,
       "submittedAt": "2025-06-05T11:51:43.195Z",
       "studentId": 1,
-      "id": 5
+      "id": "5"
     },
     {
       "examId": 2,
       "score": 14,
       "submittedAt": "2025-06-05T12:04:31.886Z",
       "studentId": 1,
-      "id": 6
+      "id": "6"
     },
     {
       "examId": 7,
       "score": 2,
       "submittedAt": "2025-06-05T12:05:41.323Z",
       "studentId": 1,
-      "id": 7
+      "id": "7"
+    },
+    {
+      "id": "9d80",
+      "examId": 1,
+      "score": 5,
+      "submittedAt": "2025-06-05T13:36:02.362Z",
+      "studentId": "1"
     }
   ]
 }
