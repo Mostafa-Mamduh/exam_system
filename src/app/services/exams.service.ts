@@ -1,18 +1,30 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { Iexam } from '../models/iexam';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExamsService {
+  examsSubject = new BehaviorSubject<Iexam[]>([]);
+  public exams$ = this.examsSubject.asObservable();
   constructor(private _Httpclient : HttpClient) { }
-  getAllExams() : Observable<any>{
-    return this._Httpclient.get<any[]>(`${environment.appUrl}/exams`);
+  getAllExams(){
+    // return this._Httpclient.get<any[]>(`${environment.appUrl}/exams`);
+     this._Httpclient.get<Iexam[]>(`${environment.appUrl}/exams`)
+      .subscribe(exams => this.examsSubject.next(exams));
   }
-  getExamById(id:number) : Observable<any> {
+  getExamById(id:any) : Observable<any> {
     return this._Httpclient.get<any>(`${environment.appUrl}/exams/${id}`);
+  }
+    addExam(examData: Iexam): Observable<any> {
+    return this._Httpclient.post<any>(`${environment.appUrl}/exams`, examData).pipe(
+      tap((newExam) => {
+        let current = this.examsSubject.getValue();
+        this.examsSubject.next([...current,newExam]);
+      })
+    );
   }
 }

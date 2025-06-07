@@ -1,0 +1,176 @@
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar bg-dark text-white">
+      <div class="sidebar-header p-3">
+        <h3 class="text-center">Admin Panel</h3>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#exams" data-bs-toggle="tab"><i class="fas fa-book me-2"></i> Manage Exams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#results" data-bs-toggle="tab"><i class="fas fa-chart-bar me-2"></i> View Results</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="tab-content p-4">
+        <!-- Exams Tab -->
+        <div class="tab-pane fade show active" id="exams">
+          <h1 class="page-title">Manage Exams</h1>
+          <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#createExamModal">
+            <i class="fas fa-plus me-2"></i> Create Exam
+          </button>
+         <app-exams-admin></app-exams-admin>
+        </div>
+
+        <!-- Results Tab -->
+        <div class="tab-pane fade" id="results">
+          <h1 class="page-title">Students' Results</h1>
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Exam Title</th>
+                  <th>Student ID</th>
+                  <th>Score</th>
+                  <th>Total Questions</th>
+                  <th>Percentage</th>
+                  <th>Submitted At</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Example Result Row -->
+                <tr>
+                  <td>Sample Exam</td>
+                  <td>12345</td>
+                  <td>8</td>
+                  <td>10</td>
+                  <td>80%</td>
+                  <td>2025-06-06</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create Exam Modal -->
+  <app-create-exam></app-create-exam>
+
+  <!-- Edit Exam Modal (Similar to Create) -->
+  <!-- <app-exams-admin></app-exams-admin> -->
+    <div class="modal fade" id="editExamModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Exam</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="editExamTitle" class="form-label">Exam Title</label>
+              <input type="text" class="form-control" id="editExamTitle" value="Sample Exam" required>
+            </div>
+            <div class="mb-3">
+              <label for="editExamDuration" class="form-label">Duration (minutes)</label>
+              <input type="number" class="form-control" id="editExamDuration" value="60" required>
+            </div>
+            <div class="mb-3">
+              <label for="editExamDescription" class="form-label">Description</label>
+              <textarea class="form-control" id="editExamDescription"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Update Exam</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Manage Questions Modal -->
+  <div class="modal fade" id="manageQuestionsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Manage Questions for Sample Exam</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addQuestionModal">Add Question</button>
+          <ul class="list-group">
+            <!-- Example Question -->
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>What is 2+2?</span>
+              <div>
+                <button class="btn btn-outline-primary btn-sm me-2">Edit</button>
+                <button class="btn btn-outline-danger btn-sm">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Question Modal -->
+  <div class="modal fade" id="addQuestionModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Question</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="questionText" class="form-label">Question Text</label>
+              <input type="text" class="form-control" id="questionText" required>
+            </div>
+            <div class="mb-3">
+              <label for="option1" class="form-label">Option 1</label>
+              <input type="text" class="form-control" id="option1" required>
+            </div>
+            <div class="mb-3">
+              <label for="option2" class="form-label">Option 2</label>
+              <input type="text" class="form-control" id="option2" required>
+            </div>
+            <div class="mb-3">
+              <label for="option3" class="form-label">Option 3</label>
+              <input type="text" class="form-control" id="option3" required>
+            </div>
+            <div class="mb-3">
+              <label for="option4" class="form-label">Option 4</label>
+              <input type="text" class="form-control" id="option4" required>
+            </div>
+            <div class="mb-3">
+              <label for="correctAnswer" class="form-label">Correct Answer</label>
+              <select class="form-select" id="correctAnswer" required>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Question</button>
+        </div>
+      </div>
+    </div>
+  </div>

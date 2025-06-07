@@ -22,7 +22,7 @@ export class StudentExamsComponent implements OnInit {
     let student = JSON.parse(localStorage.getItem('user') || '{}')
     let studentId = student.id;
     console.log(student , 'student Id');
-    this._ExamsService.getAllExams().subscribe({
+    this._ExamsService.exams$.subscribe({
       next: (res) => {
         this.exams = res;
         this._ResultService.getAllResults().subscribe({
@@ -35,5 +35,6 @@ export class StudentExamsComponent implements OnInit {
         });
       },
     });
+    this._ExamsService.getAllExams()
   }
 }

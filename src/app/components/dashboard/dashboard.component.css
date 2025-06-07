@@ -1,0 +1,67 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #212529;
+}
+
+.sidebar .nav-link {
+  color: #ccc;
+  padding: 12px 20px;
+  transition: 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.exam-card {
+  border-left: 4px solid #0d6efd;
+  transition: transform 0.2s ease-in-out;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px);
+}
+
+.exam-card .card-body {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.modal .modal-header {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.modal .modal-footer {
+  background-color: #f1f1f1;
+}
+
+.list-group-item {
+  transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
