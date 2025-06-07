@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExamsAdminComponent implements OnInit {
   exams:Iexam[]=[]
+  selectedExam!:Iexam;
   constructor(private _ExamsService : ExamsService){}
   ngOnInit(): void {
     this._ExamsService.exams$.subscribe((data) => {
@@ -17,5 +18,7 @@ export class ExamsAdminComponent implements OnInit {
     });
     this._ExamsService.getAllExams()
   }
-
+  openEditModal(exam:Iexam){
+    this.selectedExam={...exam};
+  }
 }

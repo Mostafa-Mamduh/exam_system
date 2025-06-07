@@ -1,0 +1,33 @@
+<!-- <p>exams-admin works!</p> -->
+<div class="row g-4">
+  <!-- Example Exam Card -->
+  @for (exam of exams; track $index) {
+  <div class="col-md-6 col-lg-4">
+    <div class="exam-card card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">{{ exam.title }}</h5>
+        <p class="card-text">Duration: {{ exam.duration }}</p>
+        <p class="card-text">Questions: {{ exam.questions.length }}</p>
+        <div class="d-flex gap-2">
+          <button
+            class="btn btn-outline-primary btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#editExamModal"
+            (click)="openEditModal(exam)"
+          >
+            Edit
+          </button>
+          <button class="btn btn-outline-danger btn-sm">Delete</button>
+          <button
+            class="btn btn-outline-secondary btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#manageQuestionsModal"
+          >
+            Manage Questions
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</div>
