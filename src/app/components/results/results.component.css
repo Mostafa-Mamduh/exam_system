@@ -1,135 +1,144 @@
-.result-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 20px;
-  background: linear-gradient(145deg, #ffffff, #f2f3f5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* تنسيق الصفحة الرئيسية */
+.results-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 2rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+  color: #2c3e50;
+  font-weight: 700;
   position: relative;
-  overflow: hidden;
-  animation: fadeInUp 0.6s ease-in-out forwards;
+  padding-bottom: 15px;
+  margin-bottom: 2rem;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #3498db;
+  border-radius: 2px;
+}
+
+/* كروت النتائج */
+.result-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #3498db;
+  animation: fadeIn 0.5s ease-out forwards;
   opacity: 0;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03), 0 6px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
 .result-card:hover {
-  transform: translateY(-6px) scale(1.01) rotateZ(0.2deg);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* عنوان الكرت */
 .card-title {
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
   margin-bottom: 1rem;
-  color: #0d47a1;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.card-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  border-radius: 2px;
 }
 
 /* محتوى الكرت */
 .card-text {
   font-size: 1rem;
-  color: #444;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
 }
 
 .card-text strong {
-  color: #000;
+  color: #1e293b;
+  font-weight: 600;
 }
 
-/* البار */
+/* شريط التقدم */
 .progress {
-  height: 12px;
-  border-radius: 6px;
-  background-color: #e0e0e0;
-  margin-top: 1rem;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e2e8f0;
+  margin-top: 1.5rem;
+  overflow: hidden;
 }
 
 .progress-bar {
   transition: width 0.6s ease;
-  border-radius: 6px;
 }
 
 .progress-bar.bg-success {
-  background: linear-gradient(to right, #28a745, #218838);
+  background-color: #3498db;
 }
 
 .progress-bar.bg-warning {
-  background: linear-gradient(to right, #ffc107, #e0a800);
+  background-color: #f59e0b;
 }
 
 .progress-bar.bg-danger {
-  background: linear-gradient(to right, #dc3545, #c82333);
+  background-color: #e74c3c;
 }
 
-/* جسم الكرت */
-.result-card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-/* زرارين Update & Delete */
-.card-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1.5rem;
-  gap: 10px;
-}
-
-.card-buttons button {
-  flex: 1;
-  padding: 10px 0;
-  font-size: 1rem;
-  font-weight: 600;
+/* رسالة عدم وجود نتائج */
+.alert-info {
+  background-color: white;
+  color: #2c3e50;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 4px solid #3498db;
 }
 
-.card-buttons button:hover {
-  transform: scale(1.05);
+/* تأثيرات الظهور */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.card-buttons .btn-update {
-  background-color: #0d6efd;
-  color: #fff;
-}
+/* تأخير متدرج للكروت */
+.row .col-sm-6:nth-child(1) .result-card { animation-delay: 0.1s; }
+.row .col-sm-6:nth-child(2) .result-card { animation-delay: 0.2s; }
+.row .col-sm-6:nth-child(3) .result-card { animation-delay: 0.3s; }
+.row .col-sm-6:nth-child(4) .result-card { animation-delay: 0.4s; }
 
-.card-buttons .btn-update:hover {
-  background-color: #084298;
-}
-
-.card-buttons .btn-delete {
-  background-color: #dc3545;
-  color: #fff;
-}
-
-.card-buttons .btn-delete:hover {
-  background-color: #a71d2a;
-}
-
-/* انيميشن */
-@keyframes fadeInUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
+/* التنسيق للهواتف */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+  
+  .result-card {
+    margin-bottom: 1.5rem;
   }
-}
-
-.progress-bar.bg-success {
-  background: linear-gradient(to right, #28a745, #218838);
-}
-
-.progress-bar.bg-warning {
-  background: linear-gradient(to right, #ffc107, #e0a800);
-}
-
-.progress-bar.bg-danger {
-  background: linear-gradient(to right, #dc3545, #c82333);
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
 }

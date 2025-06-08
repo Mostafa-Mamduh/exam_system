@@ -29,12 +29,12 @@
     {
       "name": "’Ahmed",
       "email": "Admin22@asd123",
-      "password": "AdminPass123@@", 
+      "password": "AdminPass123@@",
       "confirmPassword": "AdminPass123@@",
       "remembered": true,
       "role": "admin",
       "id": "4"
-    }  
+    }
   ],
   "exams": [
     {
@@ -1947,6 +1947,13 @@
       "submittedAt": "2025-06-08T18:44:54.791Z",
       "studentId": "1",
       "id": "lB9wH-d"
+    },
+    {
+      "id": "0686",
+      "examId": 1,
+      "score": 7,
+      "submittedAt": "2025-06-08T22:51:21.584Z",
+      "studentId": "4"
     }
   ]
 }
