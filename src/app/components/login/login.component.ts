@@ -48,7 +48,12 @@ export class LoginComponent {
         });
         if (foundUser) {
           localStorage.setItem('user', JSON.stringify(foundUser));
-          this._Router.navigate(['/exams']);
+          // this._Router.navigate(['/exams']);
+          if (foundUser.role === 'admin') {
+            this._Router.navigate(['/dashboard']); 
+          } else {
+            this._Router.navigate(['/exams']); 
+          }
           console.log(foundUser);
         } else {
           alert('Invalid email or password');

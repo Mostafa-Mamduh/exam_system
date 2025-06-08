@@ -25,7 +25,16 @@
       "remembered": true,
       "role": "student",
       "id": "3"
-    }
+    },
+    {
+      "name": "’Ahmed",
+      "email": "Admin22@asd123",
+      "password": "AdminPass123@@", 
+      "confirmPassword": "AdminPass123@@",
+      "remembered": true,
+      "role": "admin",
+      "id": "4"
+    }  
   ],
   "exams": [
     {
