@@ -6,7 +6,7 @@
     <div class="exam-card card shadow-sm">
       <div class="card-body">
         <h5 class="card-title">{{ exam.title }}</h5>
-        <p class="card-text">Duration: {{ exam.duration }}</p>
+        <p class="card-text">Duration: 20</p>
         <p class="card-text">Questions: {{ exam.questions.length }}</p>
         <div class="d-flex gap-2">
           <button
@@ -19,11 +19,12 @@
           </button>
           <button class="btn btn-outline-danger btn-sm">Delete</button>
           <button
-            class="btn btn-outline-secondary btn-sm"
-            data-bs-toggle="modal"
-            data-bs-target="#manageQuestionsModal"
-          >
-            Manage Questions
+              class="btn btn-outline-secondary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#manageQuestionsModal"
+              (click)="openManageModal(exam)"
+              >
+              Manage Questions
           </button>
         </div>
       </div>
@@ -31,3 +32,8 @@
   </div>
   }
 </div>
+<app-update-exam
+  [exam]="selectedExam"
+  (examUpdated)="onExamUpdated($event)"
+></app-update-exam>
+<app-manage-question [exam]="selectedExam"></app-manage-question>
