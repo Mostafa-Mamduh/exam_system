@@ -1,67 +1,123 @@
-.dashboard {
-  display: flex;
-  min-height: 100vh;
+/* تنسيقات Modal */
+#createExamModal .modal-content {
+  border: none;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: modalFadeIn 0.3s ease-out;
 }
 
-.sidebar {
-  width: 250px;
-  min-height: 100vh;
-  background-color: #212529;
-}
-
-.sidebar .nav-link {
-  color: #ccc;
-  padding: 12px 20px;
-  transition: 0.3s;
-}
-
-.sidebar .nav-link:hover,
-.sidebar .nav-link.active {
-  background-color: #343a40;
-  color: #fff;
-}
-
-.main-content {
-  flex: 1;
-  background-color: #f8f9fa;
-  overflow-y: auto;
-}
-
-.page-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.exam-card {
-  border-left: 4px solid #0d6efd;
-  transition: transform 0.2s ease-in-out;
-}
-
-.exam-card:hover {
-  transform: translateY(-5px);
-}
-
-.exam-card .card-body {
-  background-color: #ffffff;
-  border-radius: 5px;
-}
-
-.modal .modal-header {
-  background-color: #0d6efd;
+#createExamModal .modal-header {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   color: white;
+  border-bottom: none;
+  padding: 1.2rem 1.5rem;
 }
 
-.modal .modal-footer {
-  background-color: #f1f1f1;
+#createExamModal .modal-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-.list-group-item {
-  transition: background-color 0.2s;
+#createExamModal .btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
-.list-group-item:hover {
-  background-color: #f8f9fa;
+#createExamModal .btn-close:hover {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+#createExamModal .modal-body {
+  padding: 1.5rem;
+  background-color: #f8fafc;
+}
+
+#createExamModal .form-label {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+#createExamModal .form-control {
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+#createExamModal .form-control:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.2);
+}
+
+#createExamModal textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#createExamModal .modal-footer {
+  border-top: 1px solid #e2e8f0;
+  background-color: white;
+  padding: 1rem 1.5rem;
+}
+
+#createExamModal .btn-secondary {
+  background-color: #95a5a6;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#createExamModal .btn-secondary:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-1px);
+}
+
+#createExamModal .btn-primary {
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+#createExamModal .btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(41, 128, 185, 0.3);
+}
+
+/* تأثيرات الحركة */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  #createExamModal .modal-dialog {
+    margin: 1rem auto;
+  }
+  
+  #createExamModal .modal-body {
+    padding: 1rem;
+  }
+  
+  #createExamModal .form-control {
+    padding: 0.6rem 0.8rem;
+  }
 }

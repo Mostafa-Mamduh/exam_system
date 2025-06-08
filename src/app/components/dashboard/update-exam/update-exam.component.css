@@ -1,0 +1,153 @@
+#editExamModal .modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: modalSlideIn 0.3s ease-out;
+  }
+  
+  #editExamModal .modal-header {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+    position: relative;
+  }
+  
+  #editExamModal .modal-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+  }
+  
+  #editExamModal .btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.25rem;
+  }
+  
+  #editExamModal .btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg) scale(1.1);
+  }
+  
+
+  #editExamModal .modal-body {
+    padding: 1.5rem;
+    background-color: #f8fafc;
+  }
+  
+  #editExamModal .form-label {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 0.95rem;
+  }
+  
+
+  #editExamModal .form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  #editExamModal .form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.2);
+    outline: none;
+  }
+  
+  #editExamModal textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+
+  #editExamModal .modal-footer {
+    border-top: 1px solid #e2e8f0;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+  
+
+  #editExamModal .btn {
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 0.95rem;
+  }
+  
+  #editExamModal .btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+  }
+  
+  #editExamModal .btn-secondary:hover {
+    background-color: #7f8c8d;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #editExamModal .btn-primary {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+  }
+  
+  #editExamModal .btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(41, 128, 185, 0.3);
+  }
+  
+ 
+  @keyframes modalSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  @media (max-width: 576px) {
+    #editExamModal .modal-dialog {
+      margin: 0.5rem auto;
+      max-width: 95%;
+    }
+    
+    #editExamModal .modal-header {
+      padding: 1rem 1.25rem;
+    }
+    
+    #editExamModal .modal-body {
+      padding: 1.25rem;
+    }
+    
+    #editExamModal .modal-footer {
+      padding: 1rem;
+      flex-direction: column-reverse;
+      gap: 0.5rem;
+    }
+    
+    #editExamModal .btn {
+      width: 100%;
+      padding: 0.6rem;
+    }
+  }

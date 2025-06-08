@@ -1,0 +1,125 @@
+/* تنسيقات كروت الامتحانات */
+.exam-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #3498db;
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .exam-card .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .exam-card .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  
+  .exam-card .card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 2px;
+  }
+  
+  .exam-card .card-text {
+    color: #2c3e50;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* أزرار الكروت */
+  .exam-card .btn {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+  }
+  
+  .exam-card .btn-outline-primary {
+    color: #3498db;
+    border-color: #3498db;
+  }
+  
+  .exam-card .btn-outline-primary:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .exam-card .btn-outline-danger {
+    color: #e74c3c;
+    border-color: #e74c3c;
+  }
+  
+  .exam-card .btn-outline-danger:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .exam-card .btn-outline-secondary {
+    color: #7f8c8d;
+    border-color: #7f8c8d;
+  }
+  
+  .exam-card .btn-outline-secondary:hover {
+    background-color: #7f8c8d;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* تأثيرات الظهور */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* تأخير متدرج للكروت */
+  .row .col-md-6:nth-child(1) .exam-card { animation-delay: 0.1s; }
+  .row .col-md-6:nth-child(2) .exam-card { animation-delay: 0.2s; }
+  .row .col-md-6:nth-child(3) .exam-card { animation-delay: 0.3s; }
+  .row .col-md-6:nth-child(4) .exam-card { animation-delay: 0.4s; }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .exam-card {
+      margin-bottom: 1.5rem;
+    }
+    
+    .exam-card .card-title {
+      font-size: 1.2rem;
+    }
+    
+    .exam-card .btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
