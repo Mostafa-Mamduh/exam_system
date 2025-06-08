@@ -39,9 +39,9 @@
   "exams": [
     {
       "id": "1",
-      "title": "Frontend Basics",
-      "description": "Test about HTML, CSS, JS",
-      "duration": 30,
+      "title": "Frontend ",
+      "description": "Test about HTML, CSS, js",
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -270,7 +270,7 @@
       "id": "2",
       "title": "JavaScript Fundamentals",
       "description": "Covers basic concepts of JavaScript",
-      "duration": 40,
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -499,7 +499,7 @@
       "id": "3",
       "title": "TypeScript Essentials",
       "description": "Test your TypeScript skills",
-      "duration": 45,
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -728,7 +728,7 @@
       "id": "4",
       "title": "Angular Core",
       "description": "Covers core concepts of Angular framework",
-      "duration": 50,
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -957,7 +957,7 @@
       "id": "5",
       "title": "React Basics",
       "description": "Introductory test on React JS",
-      "duration": 35,
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -1186,7 +1186,7 @@
       "id": "6",
       "title": "Vue.js Overview",
       "description": "Vue fundamentals and syntax test",
-      "duration": 35,
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -1415,7 +1415,7 @@
       "id": "7",
       "title": "HTML5 & Semantic Elements",
       "description": "Semantic tags and HTML5 structure",
-      "duration": 25,
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -1644,7 +1644,7 @@
       "id": "8",
       "title": "CSS Flexbox & Grid",
       "description": "Test on layout systems using Flexbox and Grid",
-      "duration": 30,
+      "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -1868,6 +1868,20 @@
           "correctAnswer": "flex-wrap: wrap;"
         }
       ]
+    },
+    {
+      "title": "",
+      "description": "",
+      "duration": 0,
+      "questions": [],
+      "id": "rT1cW6a"
+    },
+    {
+      "title": "",
+      "description": "",
+      "duration": 0,
+      "questions": [],
+      "id": "sp9WNKh"
     }
   ],
   "results": [
@@ -1926,6 +1940,13 @@
       "score": 5,
       "submittedAt": "2025-06-05T14:57:32.629Z",
       "studentId": "1"
+    },
+    {
+      "examId": 3,
+      "score": 0,
+      "submittedAt": "2025-06-08T18:44:54.791Z",
+      "studentId": "1",
+      "id": "lB9wH-d"
     }
   ]
 }

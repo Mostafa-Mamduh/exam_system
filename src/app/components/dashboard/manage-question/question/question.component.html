@@ -1,0 +1,64 @@
+<!-- <p>question works!</p> -->
+<li
+  class="list-group-item d-flex justify-content-between align-items-center my-1"
+>
+  <span>{{ question.questionText }}</span>
+  <div>
+    <button
+      class="btn btn-outline-primary btn-sm me-2"
+      data-bs-toggle="modal"
+      data-bs-target="#editQuestionModal"
+    >
+      Edit
+    </button>
+    <button class="btn btn-outline-danger btn-sm">Delete</button>
+  </div>
+</li>
+<!-- <app-edit-question [question]="selectedQuestion"></app-edit-question> -->
+ <div class="modal fade" id="editQuestionModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Question</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="questionText" class="form-label">Question Text</label>
+              <input type="text" class="form-control" id="questionText" required>
+            </div>
+            <div class="mb-3">
+              <label for="option1" class="form-label">Option 1</label>
+              <input type="text" class="form-control" id="option1" required>
+            </div>
+            <div class="mb-3">
+              <label for="option2" class="form-label">Option 2</label>
+              <input type="text" class="form-control" id="option2" required>
+            </div>
+            <div class="mb-3">
+              <label for="option3" class="form-label">Option 3</label>
+              <input type="text" class="form-control" id="option3" required>
+            </div>
+            <div class="mb-3">
+              <label for="option4" class="form-label">Option 4</label>
+              <input type="text" class="form-control" id="option4" required>
+            </div>
+            <div class="mb-3">
+              <label for="correctAnswer" class="form-label">Correct Answer</label>
+              <select class="form-select" id="correctAnswer" required>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Question</button>
+        </div>
+      </div>
+    </div>
+  </div>
