@@ -139,3 +139,24 @@ body, html {
     padding: 10px 16px;
   }
 }
+.exams-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  display: inline-block;
+  margin: 2rem auto 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.exams-heading::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #3498db;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
