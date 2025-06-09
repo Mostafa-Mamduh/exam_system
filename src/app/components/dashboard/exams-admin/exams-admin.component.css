@@ -9,19 +9,19 @@
     animation: fadeInUp 0.5s ease-out forwards;
     opacity: 0;
   }
-  
+
   .exam-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   }
-  
+
   .exam-card .card-body {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     height: 100%;
   }
-  
+
   .exam-card .card-title {
     font-size: 1.3rem;
     font-weight: 600;
@@ -30,7 +30,7 @@
     position: relative;
     padding-bottom: 8px;
   }
-  
+
   .exam-card .card-title::after {
     content: '';
     position: absolute;
@@ -41,13 +41,13 @@
     background: #3498db;
     border-radius: 2px;
   }
-  
+
   .exam-card .card-text {
     color: #2c3e50;
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
   }
-  
+
   /* أزرار الكروت */
   .exam-card .btn {
     border-radius: 8px;
@@ -56,40 +56,40 @@
     transition: all 0.3s ease;
     font-size: 0.85rem;
   }
-  
+
   .exam-card .btn-outline-primary {
     color: #3498db;
     border-color: #3498db;
   }
-  
+
   .exam-card .btn-outline-primary:hover {
     background-color: #3498db;
     color: white;
     transform: translateY(-2px);
   }
-  
+
   .exam-card .btn-outline-danger {
     color: #e74c3c;
     border-color: #e74c3c;
   }
-  
+
   .exam-card .btn-outline-danger:hover {
     background-color: #e74c3c;
     color: white;
     transform: translateY(-2px);
   }
-  
+
   .exam-card .btn-outline-secondary {
     color: #7f8c8d;
     border-color: #7f8c8d;
   }
-  
+
   .exam-card .btn-outline-secondary:hover {
     background-color: #7f8c8d;
     color: white;
     transform: translateY(-2px);
   }
-  
+
   /* تأثيرات الظهور */
   @keyframes fadeInUp {
     from {
@@ -101,25 +101,165 @@
       transform: translateY(0);
     }
   }
-  
+
   /* تأخير متدرج للكروت */
   .row .col-md-6:nth-child(1) .exam-card { animation-delay: 0.1s; }
   .row .col-md-6:nth-child(2) .exam-card { animation-delay: 0.2s; }
   .row .col-md-6:nth-child(3) .exam-card { animation-delay: 0.3s; }
   .row .col-md-6:nth-child(4) .exam-card { animation-delay: 0.4s; }
-  
+
   /* Responsive */
   @media (max-width: 768px) {
     .exam-card {
       margin-bottom: 1.5rem;
     }
-    
+
     .exam-card .card-title {
       font-size: 1.2rem;
     }
-    
+
     .exam-card .btn {
       padding: 0.4rem 0.8rem;
       font-size: 0.8rem;
     }
   }
+
+  /* تنسيق الـ Modal بشكل عام */
+.modal {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+/* تنسيق الهيدر */
+.modal-header {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+/* تنسيق جسم الـ Modal */
+.modal-body {
+  padding: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* تنسيق قائمة الأسئلة */
+.question-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.question-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.question-item:last-child {
+  border-bottom: none;
+}
+
+.question-item span {
+  font-size: 1rem;
+  color: #495057;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-outline-primary, .btn-outline-danger {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* تنسيق الفوتر */
+.modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 8px 16px;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+/* تحسين الاستجابة */
+@media (max-width: 768px) {
+  .modal {
+    margin: 10px;
+    width: 90%;
+  }
+
+  .question-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .action-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

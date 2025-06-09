@@ -39,21 +39,21 @@
   "exams": [
     {
       "id": "1",
-      "title": "Frontend ",
-      "description": "Test about HTML, CSS, js",
+      "title": "Frontend",
+      "description": "Test about HTML, CSS,",
       "duration": 20,
       "createdBy": "admin@example.com",
       "questions": [
         {
           "id": 1,
-          "questionText": "What does HTML stand for?",
+          "questionText": "What does HTML stand ?",
           "options": [
             "Hyper Text Markup Language",
             "High Text Markup Language",
             "Hyper Tabular Markup Language",
-            "None of these"
+            "mm"
           ],
-          "correctAnswer": "Hyper Text Markup Language"
+          "correctAnswer": "Hyper Tabular Markup Language"
         },
         {
           "id": 2,
@@ -90,7 +90,7 @@
         },
         {
           "id": 5,
-          "questionText": "What is the purpose of the <div> tag in HTML?",
+          "questionText": "asd?",
           "options": [
             "Define a division or section",
             "Create a hyperlink",
@@ -275,7 +275,7 @@
       "questions": [
         {
           "id": 1,
-          "questionText": "What is the correct way to declare a variable in JavaScript?",
+          "questionText": "asd?",
           "options": [
             "let x = 5;",
             "variable x = 5;",
@@ -286,7 +286,7 @@
         },
         {
           "id": 2,
-          "questionText": "Which method removes the last element from an array?",
+          "questionText": "asd2?",
           "options": [
             "pop()",
             "push()",
@@ -504,7 +504,7 @@
       "questions": [
         {
           "id": 1,
-          "questionText": "What is TypeScript primarily used for?",
+          "questionText": "what is answer ?",
           "options": [
             "Adding static types to JavaScript",
             "Styling web pages",
@@ -1870,18 +1870,11 @@
       ]
     },
     {
-      "title": "",
-      "description": "",
-      "duration": 0,
+      "title": "New Exam",
+      "description": "new exam added ",
+      "duration": 20,
       "questions": [],
-      "id": "rT1cW6a"
-    },
-    {
-      "title": "",
-      "description": "",
-      "duration": 0,
-      "questions": [],
-      "id": "sp9WNKh"
+      "id": "eS0c8m_"
     }
   ],
   "results": [

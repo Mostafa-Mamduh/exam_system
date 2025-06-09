@@ -1,38 +1,66 @@
-import { Iexam } from '../../../models/iexam';
-import { Iquestion } from '../../../models/iquestion';
-import { ManageQuestionComponent } from '../manage-question/manage-question.component';
-import { UpdateExamComponent } from '../update-exam/update-exam.component';
-import { ExamsService } from './../../../services/exams.service';
 import { Component, OnInit } from '@angular/core';
-
+// import { ExamsService } from '../../services/exams.service';
+// import { Iexam } from '../../models/iexam';
+import { CommonModule } from '@angular/common';
+import { UpdateExamComponent } from '../update-exam/update-exam.component';
+import { ManageQuestionComponent } from '../manage-question/manage-question.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ExamsService } from '../../../services/exams.service';
+import { Iexam } from '../../../models/iexam';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-exams-admin',
-  imports: [UpdateExamComponent,ManageQuestionComponent],
+  standalone: true,
+  imports: [CommonModule, UpdateExamComponent, ManageQuestionComponent,FormsModule],
   templateUrl: './exams-admin.component.html',
-  styleUrl: './exams-admin.component.css'
+  styleUrls: ['./exams-admin.component.css']
 })
 export class ExamsAdminComponent implements OnInit {
-  exams:Iexam[]=[]
-  selectedExam!:Iexam;
-  questions:Iquestion[]=[];
-  constructor(private _ExamsService : ExamsService){}
-  ngOnInit(): void {
-    this._ExamsService.exams$.subscribe((data) => {
-      this.exams = data;
-    });
-    this._ExamsService.getAllExams()
-  }
-  openEditModal(exam:Iexam){
-    this.selectedExam=exam;
-    this.questions= this.selectedExam.questions;
-  }
-  onExamUpdated(updatedExam: Iexam) {
-  const index = this.exams.findIndex(e => e.id === updatedExam.id);
-  if (index > -1) {
-    this.exams[index] = { ...updatedExam };
-  }
-  }
-  openManageModal(exam: Iexam) {
+  exams: Iexam[] = [];
+  selectedExam: Iexam | null = null;
+
+  constructor(private _ExamsService: ExamsService, public modalService: NgbModal) {}
+
+ ngOnInit(): void {
+  this._ExamsService.exams$.subscribe({
+    next: (res) => {
+      this.exams = res;
+      console.log('Exams:', this.exams);
+    },
+    error: (err) => console.error('Error fetching exams:', err),
+  });
+  this._ExamsService.getAllExams(); // Trigger the data fetch
+}
+
+  openEditModal(content: any, exam: Iexam): void {
     this.selectedExam = { ...exam };
+    this.modalService.open(content, { ariaLabelledBy: 'editExamModalLabel' });
+  }
+
+  openManageModal(content: any, examId: any): void {
+    this.selectedExam = this.exams.find(exam => exam.id === examId) || null; // Set based on ID
+    this.modalService.open(content, { ariaLabelledBy: 'manageQuestionsModalLabel' });
+  }
+updateExam(): void {
+    if (this.selectedExam && this.selectedExam.id !== undefined) {
+      this._ExamsService.updateExam(this.selectedExam).subscribe({
+        next: (res) => {
+          console.log('Exam Updated:', res);
+          const index = this.exams.findIndex(e => e.id === res.id);
+          if (index !== -1) {
+            this.exams[index] = res;
+          }
+          this.selectedExam = null;
+        },
+        error: (err) => console.error('Update Error:', err),
+      });
+    }
+  }
+  onExamUpdated(updatedExam: Iexam): void {
+    const index = this.exams.findIndex((e) => e.id === updatedExam.id);
+    if (index !== -1) {
+      this.exams[index] = updatedExam;
+    }
+    this.selectedExam = null;
   }
 }
