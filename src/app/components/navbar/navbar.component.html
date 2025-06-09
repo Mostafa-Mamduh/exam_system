@@ -1,25 +1,34 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Exam App</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-graduation-cap me-2"></i>Exam App
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarNav">
-      <li>
-        <button class="btn btn-primary" [routerLink]="'/results'">View Results</button>
-      </li>
+
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <button class="btn btn-primary" [routerLink]="'/results'">
+            <i class="fas fa-chart-bar me-2"></i>View Results
+          </button>
+        </li>
+      </ul>
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item dropdown d-flex align-items-center justify-content-center">
-          <a class="nav-link profile-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp" class="profile-pic rounded-circle" alt="Profile Picture">
-          </a>
-          <button class="btn btn-danger" [routerLink]="['/login']" routerLinkActive="router-link-active" (click)="logOut()">Log Out</button>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Log Out</a></li>
-          </ul>
+        <li class="nav-item d-flex align-items-center">
+          <img 
+            src="https://www.pngall.com/wp-content/uploads/5/Profile-Male-PNG.png" 
+            class="profile-pic rounded-circle me-2" 
+            alt="Profile Picture"
+            style="width: 40px; height: 40px; object-fit: cover;"
+          >
+          <button class="btn btn-danger" [routerLink]="['/login']" (click)="logOut()">
+            <i class="fas fa-sign-out-alt me-2"></i>Log Out
+          </button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-

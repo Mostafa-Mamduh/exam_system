@@ -28,7 +28,7 @@
     },
     {
       "name": "’Ahmed",
-      "email": "Admin22@asd123",
+      "email": "admin@example.com",
       "password": "AdminPass123@@",
       "confirmPassword": "AdminPass123@@",
       "remembered": true,
@@ -41,7 +41,7 @@
       "id": "1",
       "title": "Frontend",
       "description": "Test about HTML, CSS,",
-      "duration": 20,
+      "duration": 30,
       "createdBy": "admin@example.com",
       "questions": [
         {
@@ -1649,7 +1649,7 @@
       "questions": [
         {
           "id": 1,
-          "questionText": "What CSS property enables Flexbox?",
+          "questionText": "What CSS property enables Flexbox ?",
           "options": [
             "display: flex;",
             "display: grid;",
@@ -1875,6 +1875,13 @@
       "duration": 20,
       "questions": [],
       "id": "eS0c8m_"
+    },
+    {
+      "id": "69b5",
+      "title": "new test",
+      "description": "testttt",
+      "duration": 20,
+      "questions": []
     }
   ],
   "results": [
