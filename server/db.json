@@ -28,7 +28,7 @@
     },
     {
       "name": "’Ahmed",
-      "email": "Admin22@asd123",
+      "email": "admin@example.com",
       "password": "AdminPass123@@",
       "confirmPassword": "AdminPass123@@",
       "remembered": true,
@@ -929,7 +929,7 @@
       "questions": [
         {
           "id": 1,
-          "questionText": "What CSS property enables Flexbox?",
+          "questionText": "What CSS property enables Flexbox ?",
           "options": [
             "display: flex;",
             "display: grid;",
