@@ -14,8 +14,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./manage-question.component.css'],
 })
 export class ManageQuestionComponent implements OnChanges {
-  @Input() examId: any | null = null; // Accept examId
-  exam: Iexam | null = null; // Store the exam based on ID
+  @Input() examId: any | null = null;
+  exam: Iexam | null = null;
   questions: Iquestion[] = [];
   selectedQuestion: Iquestion | null = null;
 
@@ -71,7 +71,24 @@ export class ManageQuestionComponent implements OnChanges {
     }
   }
 
-  deleteQuestion(id: number): void {
-    console.log('Delete question ID:', id);
-  }
+  deleteQuestion(questionId: any): void {
+  if (!this.exam) return;
+
+  const confirmDelete = confirm('Are you sure to delete this question?');
+  if (!confirmDelete) return;
+
+  this.exam.questions = this.exam.questions.filter(q => q.id !== questionId);
+
+  this._ExamsService.updateExam(this.exam).subscribe({
+    next: (res) => {
+      console.log('Done', res);
+      this.questions = res.questions;
+    },
+    error: (err) => {
+      console.error('error', err);
+      // alert('حدث خطأ أثناء حذف السؤال.');
+    }
+  });
+}
+
 }

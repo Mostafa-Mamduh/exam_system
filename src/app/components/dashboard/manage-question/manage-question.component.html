@@ -1,4 +1,3 @@
-<!-- زر لفتح الـ modal بناءً على examId -->
 <button
   class="btn btn-outline-secondary btn-sm"
   (click)="openManageModal(manageContent)"
@@ -6,7 +5,6 @@
   Manage Questions
 </button>
 
-<!-- الـ modal داخل الـ component -->
 <ng-template #manageContent let-modal>
   <div class="modal-header">
     <h5 class="modal-title" id="manageQuestionsModalLabel">Manage Questions for {{ exam?.title || 'Exam' }}</h5>
@@ -25,7 +23,7 @@
             >
               Edit
             </button>
-            <button class="btn btn-outline-danger btn-sm">Delete</button>
+            <button class="btn btn-outline-danger btn-sm" (click)="deleteQuestion(question.id)">Delete</button>
           </div>
         </li>
       } @empty {
@@ -97,7 +95,7 @@
   <div class="modal-body">
     <p>Implement Add Question form logic here.</p>
   </div>
-  <div class="modal-footer">
+  <div class="moda  l-footer">
     <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Close click')">Close</button>
     <button type="button" class="btn btn-primary">Add Question</button>
   </div>

@@ -42,4 +42,13 @@ export class ExamsService {
       })
     );
   }
+ deleteExam(deletedExam: Iexam): Observable<Iexam> {
+  return this._Httpclient.delete<Iexam>(`${environment.appUrl}/exams/${deletedExam.id}`).pipe(
+    tap(() => {
+      const currentExams = this.examsSubject.getValue();
+      const updatedExams = currentExams.filter(exam => exam.id !== deletedExam.id);
+      this.examsSubject.next(updatedExams);
+    })
+  );
+}
 }

@@ -13,7 +13,7 @@
           >
             Edit
           </button>
-          <button class="btn btn-outline-danger btn-sm">Delete</button>
+          <button class="btn btn-outline-danger btn-sm" (click)="deleteExam(exam)">Delete</button>
           <button
             class="btn btn-outline-secondary btn-sm"
             (click)="openManageModal(manageContent, exam.id)"
@@ -79,7 +79,6 @@
       type="button"
       class="btn btn-primary"
       (click)="updateExam(); modal.dismiss()"
-
     >
       Update Exam
     </button>

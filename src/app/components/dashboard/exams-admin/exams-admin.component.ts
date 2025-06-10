@@ -29,7 +29,8 @@ export class ExamsAdminComponent implements OnInit {
     },
     error: (err) => console.error('Error fetching exams:', err),
   });
-  this._ExamsService.getAllExams(); // Trigger the data fetch
+  this._ExamsService.getAllExams();
+
 }
 
   openEditModal(content: any, exam: Iexam): void {
@@ -62,5 +63,14 @@ updateExam(): void {
       this.exams[index] = updatedExam;
     }
     this.selectedExam = null;
+  }
+  deleteExam(exam:Iexam){
+   if(confirm("Are you Sure to Delete")){
+     this._ExamsService.deleteExam(exam).subscribe({
+      next : (res)=>{
+        console.log(res);
+      }
+    })
+   }
   }
 }
