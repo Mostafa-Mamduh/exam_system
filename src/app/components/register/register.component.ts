@@ -45,7 +45,7 @@ export class RegisterComponent {
   onSubmit() {
     console.log(this.userData.value);
     let user = {...this.userData.value , role : "student"}
-    this._httpClient.post(environment.appUrl, user).subscribe(res => {
+    this._httpClient.post(`${environment.appUrl}/users`, user).subscribe(res => {
       console.log(res);
     })
   }

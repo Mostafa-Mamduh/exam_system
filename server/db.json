@@ -34,6 +34,15 @@
       "remembered": true,
       "role": "admin",
       "id": "4"
+    },
+    {
+      "name": "Mostafa",
+      "email": "asd@asd.com",
+      "password": "Asd123@@@@",
+      "confirmPassword": "Asd123@@@@",
+      "remembered": false,
+      "role": "student",
+      "id": "k4uOpfA"
     }
   ],
   "exams": [
@@ -1139,6 +1148,20 @@
       "submittedAt": "2025-06-10T15:59:34.351Z",
       "studentId": "1",
       "id": 2
+    },
+    {
+      "examId": 4,
+      "score": 12,
+      "submittedAt": "2025-06-11T00:50:33.581Z",
+      "studentId": "1",
+      "id": 3
+    },
+    {
+      "examId": 5,
+      "score": 15,
+      "submittedAt": "2025-06-11T00:56:07.078Z",
+      "studentId": "k4uOpfA",
+      "id": 4
     }
   ]
 }
