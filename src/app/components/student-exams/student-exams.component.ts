@@ -12,7 +12,7 @@ import { ResultService } from '../../services/result.service';
 })
 export class StudentExamsComponent implements OnInit {
   exams!: any[];
-  submittedExamIds!: number[];
+  submittedExamIds!: any[];
   constructor(
     private _ExamsService: ExamsService,
     private _ResultService: ResultService
