@@ -1104,62 +1104,34 @@
       ]
     },
     {
+      "id": 1749666678928,
       "title": "new exam",
       "description": "new exam added",
       "duration": 20,
       "questions": [
         {
-          "examId": "dV4sNWG",
+          "examId": 1749666678928,
           "questionText": "new q?",
           "options": [
-            "daa",
-            "op2",
-            "op3",
+            "Hyper Text Markup Language",
+            "variable x = 5;",
+            "Vue.create()",
             "op4"
           ],
-          "correctAnswer": "op1"
+          "correctAnswer": "Hyper Text Markup Language",
+          "id": 1749666692896
         },
         {
-          "examId": "dV4sNWG",
+          "examId": 1749666678928,
           "questionText": "new q2?",
           "options": [
             "Hyper Text Markup Language",
-            "Vue.define()",
-            "Database management",
-            "Vue.module()"
-          ],
-          "correctAnswer": "Vue.module()"
-        }
-      ],
-      "id": "dV4sNWG"
-    },
-    {
-      "id": "6ffb",
-      "title": "test ",
-      "description": "11",
-      "duration": 20,
-      "questions": [
-        {
-          "examId": "6ffb",
-          "questionText": "Q1 test",
-          "options": [
-            "op1",
-            "op2",
-            "op3",
+            "Server-side scripting",
+            "Vue.create()",
             "op4"
           ],
-          "correctAnswer": "op3"
-        },
-        {
-          "examId": "6ffb",
-          "questionText": "Q2 test",
-          "options": [
-            "12",
-            "22",
-            "23",
-            "33"
-          ],
-          "correctAnswer": "33"
+          "correctAnswer": "Vue.create()",
+          "id": 1749666705036
         }
       ]
     }
@@ -1213,6 +1185,31 @@
       "score": 6,
       "submittedAt": "2025-06-11T09:41:30.582Z",
       "studentId": "c55e"
+    },
+    {
+      "examId": 1749666678928,
+      "score": 1,
+      "submittedAt": "2025-06-11T18:32:14.509Z",
+      "id": "78fMoyk"
+    },
+    {
+      "examId": 4,
+      "score": 6,
+      "submittedAt": "2025-06-11T18:32:37.820Z",
+      "id": "hthc4GK"
+    },
+    {
+      "examId": 8,
+      "score": 13,
+      "submittedAt": "2025-06-11T18:55:11.284Z",
+      "id": "iPCVflE"
+    },
+    {
+      "examId": 5,
+      "score": 5,
+      "submittedAt": "2025-06-11T19:56:37.398Z",
+      "studentId": "2",
+      "id": "dz9d3wt"
     }
   ]
 }

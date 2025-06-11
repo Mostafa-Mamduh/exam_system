@@ -33,6 +33,7 @@ export class CreateExamComponent {
     //   }
     // })
     let exam: Iexam = {
+    id: Date.now(),
     title: this.exam.value.title || '',
     description: this.exam.value.description || '',
     duration: this.exam.value.duration || 0,

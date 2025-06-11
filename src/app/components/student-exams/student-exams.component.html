@@ -11,7 +11,7 @@
           <p class="card-text flex-grow-1">
             {{ exam.description }}
           </p>
-          <button class="btn btn-primary mt-auto" [disabled]="submittedExamIds?.includes(exam.id)" [routerLink]="`${exam.id}`">
+          <button class="btn btn-primary mt-auto" [disabled]="submittedExamIds?.includes(+exam.id)" [routerLink]="`${exam.id}`">
             Start Exam
           </button>
         </div>

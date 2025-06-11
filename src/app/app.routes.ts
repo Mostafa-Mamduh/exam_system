@@ -6,14 +6,16 @@ import { StudentExamsComponent } from './components/student-exams/student-exams.
 import { ExamDetailsComponent } from './components/student-exams/exam-details/exam-details.component';
 
 import { ResultsComponent } from './components/results/results.component';
+import { AuthGuard } from './guards/auth.guard';
+import { AdminGuard } from './guards/admin.guard';
 
 export const routes: Routes = [
   {path : "" , component : LoginComponent},
   {path : "login" , component : LoginComponent},
   {path : "register", component : RegisterComponent},
-  {path : "exams" , component : StudentExamsComponent},
-  {path : "exams/:id" , component : ExamDetailsComponent},
-  {path : "dashboard" , component : DashboardComponent},
-  {path : "results" , component : ResultsComponent},
+  {path : "exams" , component : StudentExamsComponent, canActivate:[AuthGuard]},
+  {path : "exams/:id" , component : ExamDetailsComponent, canActivate:[AuthGuard]},
+  {path : "dashboard" , component : DashboardComponent, canActivate:[AuthGuard,AdminGuard]},
+  {path : "results" , component : ResultsComponent, canActivate:[AuthGuard]},
   // {path : "create" , component : CreateExamComponent},
 ];

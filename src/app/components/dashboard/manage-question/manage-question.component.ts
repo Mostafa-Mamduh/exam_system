@@ -101,29 +101,30 @@ export class ManageQuestionComponent implements OnChanges {
   }
 
   addQuestion(): void {
-    if (this.addQuestionForm.valid && this.exam) {
-      const newQuestion: Iquestion = {
-        examId: this.exam.id!,
-        questionText: this.addQuestionForm.value.questionText || '',
-        options: (this.addQuestionForm.value.options || []).filter((opt): opt is string => opt !== null),
-        correctAnswer: this.addQuestionForm.value.correctAnswer || '',
-      };
-      this.exam.questions.push(newQuestion);
-      this._ExamsService.updateExam(this.exam).subscribe({
-        next: (res) => {
-          console.log('Question Added:', res);
-          this.questions = res.questions;
-          this.addQuestionForm.reset({
-            questionText: '',
-            options: ['', '','',''],
-            correctAnswer: '',
-          });
-          this.modalService.dismissAll();
-        },
-        error: (err) => console.error('Add Error:', err),
-      });
-    }
+  if (this.addQuestionForm.valid && this.exam) {
+    const newQuestion: Iquestion = {
+      examId: this.exam.id!,
+      questionText: this.addQuestionForm.value.questionText || '',
+      options: (this.addQuestionForm.value.options as string[]) || [],
+      correctAnswer: this.addQuestionForm.value.correctAnswer || '',
+      id: Date.now(),
+    };
+    this.exam.questions.push(newQuestion);
+    this._ExamsService.updateExam(this.exam).subscribe({
+      next: (res) => {
+        console.log('Question Added Response:', res);
+        this.questions = res.questions || [];
+        this.addQuestionForm.reset({
+          questionText: '',
+          options: ['', '', '', ''],
+          correctAnswer: '',
+        });
+        this.modalService.dismissAll();
+      },
+      error: (err) => console.error('Add Error:', err),
+    });
   }
+}
 
   get optionsControls() {
     return (this.addQuestionForm.get('options') as FormArray).controls;

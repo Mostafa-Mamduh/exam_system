@@ -11,10 +11,10 @@
           <div class="card-body">
             <h5 class="card-title text-primary">{{ exams[i]?.title }}</h5>
             <p class="card-text mb-2">
-              <strong>Score:</strong> {{ result.score }} / 20
+              <strong>Score:</strong> {{ result.score }} / {{exams[i].questions.length}}
             </p>
             <p class="card-text mb-2">
-              <strong>Percentage:</strong> {{ (result.score / 20 * 100) | number:'1.2-2' }}%
+              <strong>Percentage:</strong> {{ (result.score / (exams[i].questions.length) * 100) | number:'1.2-2' }}%
             </p>
             <p class="card-text text-muted">
               <strong>Submitted:</strong> {{ result.submittedAt| date:'MMM d, yyyy' }}

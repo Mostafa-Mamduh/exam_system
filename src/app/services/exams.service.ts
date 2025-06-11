@@ -32,16 +32,17 @@ export class ExamsService {
   }
 
   updateExam(updatedExam: Iexam): Observable<Iexam> {
-    return this._Httpclient.put<Iexam>(`${environment.appUrl}/exams/${updatedExam.id}`, updatedExam).pipe(
-      tap((res) => {
-        const currentExams = this.examsSubject.getValue();
-        const updatedExams = currentExams.map(exam =>
-          exam.id === updatedExam.id ? res : exam
-        );
-        this.examsSubject.next(updatedExams);
+  return this._Httpclient.put<Iexam>(`${environment.appUrl}/exams/${updatedExam.id}`, updatedExam).pipe(
+    tap((res) => {
+      const currentExams = this.examsSubject.getValue();
+      const updatedExams = currentExams.map(exam =>
+        exam.id === updatedExam.id ? res : exam
+      );
+      this.examsSubject.next(updatedExams);
+      console.log('Updated Exam Response:', res);
       })
-    );
-  }
+  );
+}
  deleteExam(deletedExam: Iexam): Observable<Iexam> {
   return this._Httpclient.delete<Iexam>(`${environment.appUrl}/exams/${deletedExam.id}`).pipe(
     tap(() => {

@@ -31,6 +31,7 @@ export class StudentExamsComponent implements OnInit {
             this.submittedExamIds = results
               .filter((result) => result.studentId == studentId)
               .map((result) => result.examId);
+            console.log(this.submittedExamIds , "submitted ids");
           },
         });
       },
