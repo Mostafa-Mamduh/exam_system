@@ -1,5 +1,5 @@
 export interface Iresult {
-  id?: number;
+  id?: any;
   examId: number;
   studentId: number;
   score: number;

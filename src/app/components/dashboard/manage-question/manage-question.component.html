@@ -93,10 +93,46 @@
     <button type="button" class="btn-close" (click)="modal.dismiss('Cross click')" aria-label="Close"></button>
   </div>
   <div class="modal-body">
-    <p>Implement Add Question form logic here.</p>
+    <form [formGroup]="addQuestionForm" (ngSubmit)="addQuestion()">
+      <div class="mb-3">
+        <label for="addQuestionText" class="form-label">Question Text</label>
+        <input
+          type="text"
+          class="form-control"
+          id="addQuestionText"
+          formControlName="questionText"
+          required
+        />
+      </div>
+      <div formArrayName="options" class="mb-3">
+        <div *ngFor="let option of optionsControls; let i = index" class="mb-2">
+          <label [for]="'option' + i" class="form-label">Option {{ i + 1 }}</label>
+          <input
+            type="text"
+            class="form-control"
+            [id]="'option' + i"
+            [formControlName]="i"
+            required
+          />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="addCorrectAnswer" class="form-label">Correct Answer</label>
+        <select
+          class="form-select"
+          id="addCorrectAnswer"
+          formControlName="correctAnswer"
+          required
+        >
+          <option *ngFor="let option of addQuestionForm.get('options')?.value; let i = index" [value]="option">
+            Option {{ i + 1 }}: {{ option }}
+          </option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="addQuestionForm.invalid">Add Question</button>
+    </form>
   </div>
-  <div class="moda  l-footer">
+  <div class="modal-footer">
     <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Close click')">Close</button>
-    <button type="button" class="btn btn-primary">Add Question</button>
   </div>
 </ng-template>

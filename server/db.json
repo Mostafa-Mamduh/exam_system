@@ -25,6 +25,15 @@
       "remembered": true,
       "role": "admin",
       "id": "4"
+    },
+    {
+      "name": "Mostafa",
+      "email": "asd@asd.com",
+      "password": "Asd123@@@@",
+      "confirmPassword": "Asd123@@@@",
+      "remembered": false,
+      "role": "student",
+      "id": "k4uOpfA"
     }
   ],
   "exams": [
@@ -254,17 +263,6 @@
       "createdBy": "admin@example.com",
       "questions": [
         {
-          "id": 1,
-          "questionText": "What is React primarily used for?",
-          "options": [
-            "Building user interfaces",
-            "Server-side logic",
-            "Database management",
-            "Styling pages"
-          ],
-          "correctAnswer": "Building user interfaces"
-        },
-        {
           "id": 3,
           "questionText": "How do you create a functional component in React?",
           "options": [
@@ -299,7 +297,7 @@
         },
         {
           "id": 7,
-          "questionText": "How do you handle events in React?",
+          "questionText": "How do you handle events in ?",
           "options": [
             "onClick={function}",
             "addEventListener",
@@ -307,17 +305,6 @@
             "attachEvent"
           ],
           "correctAnswer": "onClick={function}"
-        },
-        {
-          "id": 8,
-          "questionText": "What is the virtual DOM in React?",
-          "options": [
-            "A lightweight copy of the DOM",
-            "The actual browser DOM",
-            "A database",
-            "A styling engine"
-          ],
-          "correctAnswer": "A lightweight copy of the DOM"
         },
         {
           "id": 9,
@@ -580,39 +567,6 @@
             "Styling"
           ],
           "correctAnswer": "Two-way data binding"
-        },
-        {
-          "id": 12,
-          "questionText": "How do you define a method in a Vue component?",
-          "options": [
-            "methods: {}",
-            "functions: {}",
-            "actions: {}",
-            "events: {}"
-          ],
-          "correctAnswer": "methods: {}"
-        },
-        {
-          "id": 13,
-          "questionText": "What is Vue Router used for?",
-          "options": [
-            "Client-side routing",
-            "Server-side routing",
-            "Data fetching",
-            "State management"
-          ],
-          "correctAnswer": "Client-side routing"
-        },
-        {
-          "id": 14,
-          "questionText": "What is the purpose of the watch property in Vue?",
-          "options": [
-            "Monitor data changes",
-            "Render templates",
-            "Handle events",
-            "Style components"
-          ],
-          "correctAnswer": "Monitor data changes"
         },
         {
           "id": 15,
@@ -1139,24 +1093,66 @@
           "correctAnswer": "flex-wrap: wrap;"
         }
       ]
+    },
+    {
+      "title": "new exam",
+      "description": "new exam added",
+      "duration": 20,
+      "questions": [
+        {
+          "examId": "dV4sNWG",
+          "questionText": "new q?",
+          "options": [
+            "daa",
+            "op2",
+            "op3",
+            "op4"
+          ],
+          "correctAnswer": "op1"
+        },
+        {
+          "examId": "dV4sNWG",
+          "questionText": "new q2?",
+          "options": [
+            "Hyper Text Markup Language",
+            "Vue.define()",
+            "Database management",
+            "Vue.module()"
+          ],
+          "correctAnswer": "Vue.module()"
+        }
+      ],
+      "id": "dV4sNWG"
     }
   ],
   "results": [
     {
       "examId": 4,
+      "score": 2,
+      "submittedAt": "2025-06-10T15:57:05.160Z",
+      "studentId": "1",
+      "id": 1
+    },
+    {
+      "examId": 5,
       "score": 0,
-      "submittedAt": "2025-06-05T11:49:05.829Z",
-      "studentId": 1,
-      "id": "4"
+      "submittedAt": "2025-06-10T15:59:34.351Z",
+      "studentId": "1",
+      "id": 2
     },
     {
-      "examId": 6,
-      "score": 5,
-      "submittedAt": "2025-06-05T11:51:43.195Z",
-      "studentId": 1,
-      "id": "5"
+      "examId": 4,
+      "score": 12,
+      "submittedAt": "2025-06-11T00:50:33.581Z",
+      "studentId": "1",
+      "id": 3
     },
     {
+      "examId": 5,
+      "score": 15,
+      "submittedAt": "2025-06-11T00:56:07.078Z",
+      "studentId": "k4uOpfA",
+      "id": 4
       "examId": 7,
       "score": 2,
       "submittedAt": "2025-06-05T12:05:41.323Z",

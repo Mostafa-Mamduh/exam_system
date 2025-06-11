@@ -1,15 +1,17 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Iquestion } from '../../../models/iquestion';
 import { Iexam } from '../../../models/iexam';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { ExamsService } from '../../../services/exams.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-manage-question',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './manage-question.component.html',
   styleUrls: ['./manage-question.component.css'],
 })
@@ -19,7 +21,21 @@ export class ManageQuestionComponent implements OnChanges {
   questions: Iquestion[] = [];
   selectedQuestion: Iquestion | null = null;
 
-  constructor(private _ExamsService: ExamsService, public modalService: NgbModal) {}
+  addQuestionForm = new FormGroup({
+    questionText: new FormControl('', [Validators.required]),
+    options: new FormArray([
+      new FormControl('', Validators.required),
+      new FormControl('', Validators.required),
+      new FormControl('', Validators.required),
+      new FormControl('', Validators.required),
+    ]),
+    correctAnswer: new FormControl('', [Validators.required]),
+  });
+
+  constructor(
+    private _ExamsService: ExamsService,
+    public modalService: NgbModal
+  ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['examId'] && this.examId !== null) {
@@ -71,24 +87,45 @@ export class ManageQuestionComponent implements OnChanges {
     }
   }
 
-  deleteQuestion(questionId: any): void {
-  if (!this.exam) return;
-
-  const confirmDelete = confirm('Are you sure to delete this question?');
-  if (!confirmDelete) return;
-
-  this.exam.questions = this.exam.questions.filter(q => q.id !== questionId);
-
-  this._ExamsService.updateExam(this.exam).subscribe({
-    next: (res) => {
-      console.log('Done', res);
-      this.questions = res.questions;
-    },
-    error: (err) => {
-      console.error('error', err);
-      // alert('حدث خطأ أثناء حذف السؤال.');
+  deleteQuestion(id: any): void {
+    if (this.exam) {
+      this.exam.questions = this.exam.questions.filter((q) => q.id !== id);
+      this._ExamsService.updateExam(this.exam).subscribe({
+        next: (res) => {
+          console.log('Question Deleted:', res);
+          this.questions = res.questions;
+        },
+        error: (err) => console.error('Delete Error:', err),
+      });
     }
-  });
-}
+  }
 
+  addQuestion(): void {
+    if (this.addQuestionForm.valid && this.exam) {
+      const newQuestion: Iquestion = {
+        examId: this.exam.id!,
+        questionText: this.addQuestionForm.value.questionText || '',
+        options: (this.addQuestionForm.value.options || []).filter((opt): opt is string => opt !== null),
+        correctAnswer: this.addQuestionForm.value.correctAnswer || '',
+      };
+      this.exam.questions.push(newQuestion);
+      this._ExamsService.updateExam(this.exam).subscribe({
+        next: (res) => {
+          console.log('Question Added:', res);
+          this.questions = res.questions;
+          this.addQuestionForm.reset({
+            questionText: '',
+            options: ['', '','',''],
+            correctAnswer: '',
+          });
+          this.modalService.dismissAll();
+        },
+        error: (err) => console.error('Add Error:', err),
+      });
+    }
+  }
+
+  get optionsControls() {
+    return (this.addQuestionForm.get('options') as FormArray).controls;
+  }
 }
