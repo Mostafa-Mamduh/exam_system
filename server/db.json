@@ -9,25 +9,16 @@
       "id": "1"
     },
     {
-      "name": "Keemo",
-      "email": "mmabdallah801@gmail.com",
-      "password": "Asd123@@",
-      "confirmPassword": "Asd123@@",
-      "remembered": false,
+      "name": "Rehab",
+      "email": "rehab@example.com",
+      "password": "Rehabhussin@23",
+      "confirmPassword": "Rehabhussin@23",
+      "remembered": true,
       "role": "student",
       "id": "2"
     },
     {
-      "name": "Keemo",
-      "email": "mmabdallah801@gmail.com",
-      "password": "Asd123@@",
-      "confirmPassword": "Asd123@@",
-      "remembered": true,
-      "role": "student",
-      "id": "3"
-    },
-    {
-      "name": "’Ahmed",
+      "name": "Ahmed",
       "email": "admin@example.com",
       "password": "AdminPass123@@",
       "confirmPassword": "AdminPass123@@",
@@ -1171,6 +1162,13 @@
       "submittedAt": "2025-06-05T12:05:41.323Z",
       "studentId": 1,
       "id": "7"
+    },
+    {
+      "id": "0f47",
+      "examId": 4,
+      "score": 7,
+      "submittedAt": "2025-06-10T19:40:22.435Z",
+      "studentId": "1"
     }
   ]
 }
