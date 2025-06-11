@@ -9,7 +9,7 @@ import {
   ValidationErrors,
   Validators,
 } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { environment } from '../../../environments/environment.development';
 
 @Component({
@@ -39,16 +39,27 @@ export class RegisterComponent {
     },
     { validators: this.passwordsMatchValidator }
   );
-  constructor(private _httpClient : HttpClient){
 
-  }
+  constructor(private _httpClient: HttpClient, private _router: Router) {}
+
   onSubmit() {
-    console.log(this.userData.value);
-    let user = {...this.userData.value , role : "student"}
-    this._httpClient.post(`${environment.appUrl}/users`, user).subscribe(res => {
-      console.log(res);
-    })
+    if (this.userData.valid) {
+      console.log(this.userData.value);
+      let user = { ...this.userData.value, role: 'student' };
+      this._httpClient.post(`${environment.appUrl}/users`, user).subscribe({
+        next: (res) => {
+          console.log(res);
+          this._router.navigate(['/login']); 
+        },
+        error: (err) => {
+          console.error('Error registering user:', err);
+        }
+      });
+    } else {
+      this.userData.markAllAsTouched(); 
+    }
   }
+
   get name() {
     return this.userData.get('name');
   }
@@ -64,9 +75,10 @@ export class RegisterComponent {
   get role() {
     return this.userData.get('role');
   }
-  get remembered(){
+  get remembered() {
     return this.userData.get('remembered');
   }
+
   passwordsMatchValidator(form: AbstractControl): ValidationErrors | null {
     const pass = form.get('password')?.value;
     const confirm = form.get('confirmPassword')?.value;
